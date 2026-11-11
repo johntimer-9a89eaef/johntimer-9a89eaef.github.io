@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>极品每日大赛外围颜值在线 - 每日赛事颜值榜单与选手图鉴</title>
+<meta name="description" content="极品每日大赛外围颜值在线，聚合每日大赛外围赛程、选手颜值图鉴、场外花絮与评分榜单。覆盖开赛日程、选手造型解析、观众投票走向与赛事规则说明，适合关注外围赛动态与选手风采的观众查阅。">
+<meta name="keywords" content="极品每日大赛外围颜值在线">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b3244a'/%3E%3Cpath d='M18 44 L32 16 L46 44 Z' fill='none' stroke='%23ffd9e2' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='36' r='5' fill='%23ffd9e2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --main:#b3244a;
+  --main-soft:#f6e2e8;
+  --main-deep:#7c1531;
+  --accent:#1f7a72;
+  --accent-soft:#e0f0ee;
+  --bg:#faf7f6;
+  --panel:#ffffff;
+  --panel-alt:#fdf4f6;
+  --text:#1f1b1c;
+  --text-2:#4b4446;
+  --text-3:#847a7c;
+  --line:#e8dedf;
+  --radius-card:14px;
+  --radius-btn:8px;
+  --radius-tag:6px;
+  --radius-banner:18px;
+  --shadow:0 2px 10px rgba(45,20,28,.06);
+  --shadow-hover:0 8px 22px rgba(45,20,28,.12);
+  --ann-h:38px;
+  --head-h:64px;
+  --gap:22px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ann-h) + var(--head-h) + 10px);}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--main-deep);text-decoration:none;}
+a:hover{color:var(--main);}
+h1,h2,h3,h4{margin:0;font-weight:700;line-height:1.35;}
+p{margin:0 0 12px;}
+ul,ol{margin:0 0 12px;padding-left:20px;}
+li{margin-bottom:6px;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;}
+
+/* ===== 吸顶区域 ===== */
+.sticky-wrap{position:sticky;top:0;z-index:60;}
+.announce{
+  height:var(--ann-h);background:linear-gradient(90deg,var(--main-deep),var(--main));
+  color:#ffe9ef;display:flex;align-items:center;gap:14px;
+  padding:0 16px;font-size:13px;overflow:hidden;
+}
+.announce .ann-brand{font-weight:700;letter-spacing:.5px;color:#fff;white-space:nowrap;}
+.announce .ann-track{display:flex;gap:26px;overflow:hidden;white-space:nowrap;flex:1;}
+.announce .ann-item{display:inline-flex;align-items:center;gap:8px;}
+.announce .ann-date{background:rgba(255,255,255,.16);border-radius:4px;padding:1px 6px;font-size:12px;}
+.announce .ann-more{color:#ffd6e0;border-bottom:1px dashed rgba(255,214,224,.6);white-space:nowrap;}
+
+.site-head{
+  height:var(--head-h);background:rgba(255,255,255,.9);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;
+  padding:0 16px;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:9px;flex-shrink:0;}
+.brand svg{width:34px;height:34px;}
+.brand-text{font-size:16px;font-weight:800;color:var(--main-deep);letter-spacing:.3px;}
+.head-nav{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none;}
+.head-nav::-webkit-scrollbar{display:none;}
+.head-nav a{
+  padding:7px 11px;border-radius:var(--radius-btn);font-size:14px;color:var(--text-2);
+  white-space:nowrap;
+}
+.head-nav a:hover{background:var(--main-soft);color:var(--main-deep);}
+.head-nav a.active{background:var(--main);color:#fff;}
+.head-tools{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:var(--radius-btn);background:#fff;overflow:hidden;}
+.search-box input{
+  border:0;outline:0;padding:7px 10px;font-size:13px;width:150px;color:var(--text);background:transparent;
+}
+.search-box button{
+  border:0;background:var(--main-soft);color:var(--main-deep);padding:7px 12px;font-size:13px;cursor:pointer;
+}
+.search-box button:hover{background:var(--main);color:#fff;}
+.btn-ghost{
+  border:1px solid var(--main);color:var(--main-deep);background:#fff;border-radius:var(--radius-btn);
+  padding:7px 13px;font-size:13px;cursor:pointer;
+}
+.btn-ghost:hover{background:var(--main-soft);}
+.hamburger{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-btn);
+  width:38px;height:36px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px;
+}
+.hamburger span{display:block;width:17px;height:2px;background:var(--main-deep);border-radius:2px;}
+.hamburger:focus-visible,.head-nav a:focus-visible,.search-box button:focus-visible,.btn-ghost:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+/* 移动抽屉 */
+.drawer-mask{
+  display:none;position:fixed;inset:0;background:rgba(28,18,22,.45);z-index:90;
+}
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(80vw,300px);background:#fff;z-index:100;
+  transform:translateX(102%);transition:transform .25s ease;padding:18px 16px;overflow-y:auto;
+  box-shadow:-8px 0 24px rgba(0,0,0,.16);
+}
+.drawer.open{transform:translateX(0);}
+.drawer h4{font-size:14px;color:var(--text-3);margin-bottom:10px;letter-spacing:1px;}
+.drawer a{display:block;padding:9px 8px;border-radius:var(--radius-btn);color:var(--text-2);font-size:15px;}
+.drawer a:hover{background:var(--main-soft);color:var(--main-deep);}
+.drawer .drawer-close{
+  position:absolute;top:10px;right:10px;border:0;background:var(--main-soft);color:var(--main-deep);
+  width:32px;height:32px;border-radius:50%;font-size:16px;cursor:pointer;
+}
+body.drawer-open{overflow:hidden;}
+
+/* ===== 布局 ===== */
+.container{max-width:1360px;margin:0 auto;padding:0 16px;}
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr) 280px;gap:var(--gap);padding-top:24px;align-items:start;}
+.channel-col{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px);}
+.channel-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:14px;box-shadow:var(--shadow);}
+.channel-card h3{font-size:14px;color:var(--text-3);font-weight:600;letter-spacing:1px;margin-bottom:10px;}
+.channel-list{list-style:none;padding:0;margin:0;}
+.channel-list li{margin:0 0 2px;}
+.channel-list a{
+  display:flex;justify-content:space-between;align-items:center;gap:6px;
+  padding:8px 9px;border-radius:var(--radius-btn);font-size:14px;color:var(--text-2);
+}
+.channel-list a:hover{background:var(--panel-alt);color:var(--main-deep);}
+.channel-list a.active{background:var(--main-soft);color:var(--main-deep);font-weight:700;}
+.channel-list .cnt{font-size:12px;color:var(--text-3);}
+.aside-col{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px);display:flex;flex-direction:column;gap:var(--gap);}
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:15px;box-shadow:var(--shadow);}
+.side-card h3{font-size:15px;margin-bottom:11px;color:var(--main-deep);}
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank;}
+.rank-list li{
+  counter-increment:rank;display:flex;gap:9px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;
+}
+.rank-list li:last-child{border-bottom:0;}
+.rank-list li::before{
+  content:counter(rank);flex-shrink:0;width:20px;height:20px;border-radius:5px;background:var(--main-soft);
+  color:var(--main-deep);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.rank-list li:nth-child(1)::before{background:var(--main);color:#fff;}
+.rank-list li:nth-child(2)::before{background:#e0899f;color:#fff;}
+.rank-list li:nth-child(3)::before{background:#f0b6c5;color:var(--main-deep);}
+.rank-list .r-name{font-weight:600;color:var(--text);}
+.rank-list .r-sub{font-size:12px;color:var(--text-3);display:block;}
+.timeline-mini{list-style:none;padding:0;margin:0;}
+.timeline-mini li{padding:7px 0 7px 14px;border-left:2px solid var(--main-soft);position:relative;font-size:13px;color:var(--text-2);}
+.timeline-mini li::before{content:"";position:absolute;left:-5px;top:13px;width:8px;height:8px;border-radius:50%;background:var(--main);}
+.timeline-mini time{display:block;font-size:12px;color:var(--text-3);}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;border-radius:var(--radius-banner);
+  background:radial-gradient(circle at 82% 22%,#f9d9e2 0%,transparent 55%),
+             radial-gradient(circle at 12% 84%,#d9ece9 0%,transparent 52%),
+             linear-gradient(140deg,#fff6f8 0%,#fdf2f5 42%,#f5fbfa 100%);
+  border:1px solid var(--line);padding:34px 30px 30px;margin-bottom:26px;
+}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:26px;align-items:center;position:relative;z-index:2;}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid #f0c9d5;
+  color:var(--main-deep);font-size:12.5px;padding:4px 11px;border-radius:20px;margin-bottom:14px;
+}
+.hero-tag i{width:6px;height:6px;border-radius:50%;background:var(--main);display:inline-block;animation:pulse 2.4s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.45;transform:scale(.8);}}
+.hero h1{font-size:36px;letter-spacing:.5px;color:var(--main-deep);margin-bottom:14px;line-height:1.28;}
+.hero-desc{font-size:15.5px;color:var(--text-2);max-width:600px;margin-bottom:20px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-bottom:18px;}
+.btn-primary{
+  background:var(--main);color:#fff;border:0;border-radius:var(--radius-btn);
+  padding:10px 20px;font-size:14.5px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(179,36,74,.24);
+  transition:transform .18s,box-shadow .18s;
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(179,36,74,.3);color:#fff;}
+.btn-line{
+  background:#fff;color:var(--main-deep);border:1px solid #ecc3d0;border-radius:var(--radius-btn);
+  padding:10px 18px;font-size:14.5px;font-weight:600;cursor:pointer;
+}
+.btn-line:hover{background:var(--main-soft);}
+.hero-stats{display:flex;gap:24px;flex-wrap:wrap;}
+.hero-stats div{font-size:13px;color:var(--text-3);}
+.hero-stats strong{display:block;font-size:21px;color:var(--main-deep);line-height:1.2;}
+.hero-visual{position:relative;height:250px;}
+.hero-visual svg{width:100%;height:100%;}
+.hero-blur{position:absolute;border-radius:50%;filter:blur(26px);opacity:.5;z-index:1;}
+.hero-blur.b1{width:150px;height:150px;background:#f6b9cb;top:-20px;right:40px;}
+.hero-blur.b2{width:120px;height:120px;background:#a9d8d1;bottom:0;left:-20px;}
+
+/* ===== 板块通用 ===== */
+.section{margin-bottom:30px;}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap;}
+.section-head h2{font-size:21px;color:var(--text);position:relative;padding-left:13px;}
+.section-head h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:4px;border-radius:2px;background:var(--main);}
+.section-head .sub{font-size:13px;color:var(--text-3);}
+.section-head .head-link{font-size:13px;color:var(--main-deep);border-bottom:1px dashed #d9a7b7;}
+
+/* 概览 */
+.overview{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:22px;box-shadow:var(--shadow);}
+.overview-grid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:24px;align-items:start;}
+.overview p{font-size:14.5px;color:var(--text-2);}
+.overview .ov-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px;}
+.tag{
+  display:inline-block;padding:3px 9px;border-radius:var(--radius-tag);font-size:12.5px;
+  background:var(--main-soft);color:var(--main-deep);white-space:nowrap;
+}
+.tag.t-accent{background:var(--accent-soft);color:var(--accent);}
+.tag.t-line{background:#fff;border:1px solid var(--line);color:var(--text-3);}
+.ov-figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);}
+.ov-figure img{width:100%;height:160px;object-fit:cover;}
+.ov-figure figcaption{font-size:12px;color:var(--text-3);padding:7px 9px;background:var(--panel-alt);}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px;}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;
+  box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.card .thumb{position:relative;}
+.card .thumb img{width:100%;height:140px;object-fit:cover;}
+.card .thumb .badge{
+  position:absolute;left:9px;top:9px;background:rgba(124,21,49,.86);color:#fff;font-size:11.5px;
+  padding:2px 8px;border-radius:5px;backdrop-filter:blur(3px);
+}
+.card .thumb .heat{
+  position:absolute;right:9px;bottom:9px;background:rgba(255,255,255,.92);color:var(--main-deep);
+  font-size:11.5px;padding:2px 8px;border-radius:5px;font-weight:600;
+}
+.card-body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:7px;flex:1;}
+.card-body h3{font-size:15px;line-height:1.4;}
+.card-body h3 a{color:var(--text);}
+.card-body h3 a:hover{color:var(--main);}
+.card-body .look{font-size:13px;color:var(--text-2);line-height:1.65;flex:1;}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px;}
+.card-tags span{font-size:11.5px;color:var(--text-3);background:var(--panel-alt);padding:1px 7px;border-radius:4px;}
+.card-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--text-3);border-top:1px dashed var(--line);padding-top:8px;}
+
+/* 动态列表 */
+.news-list{list-style:none;padding:0;margin:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow);}
+.news-list li{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);}
+.news-list li:last-child{border-bottom:0;}
+.news-list time{font-size:12px;color:var(--text-3);line-height:1.5;}
+.news-list .n-title{font-size:14.5px;font-weight:600;color:var(--text);margin-bottom:2px;}
+.news-list .n-title a{color:var(--text);}
+.news-list .n-title a:hover{color:var(--main);}
+.news-list .n-sum{font-size:13px;color:var(--text-2);}
+.news-list .n-tag{font-size:11.5px;color:var(--accent);background:var(--accent-soft);padding:1px 7px;border-radius:4px;margin-left:6px;}
+
+/* 分类筛选 */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+.filter-btn{
+  border:1px solid var(--line);background:#fff;color:var(--text-2);border-radius:20px;
+  padding:5px 14px;font-size:13px;cursor:pointer;transition:all .15s;
+}
+.filter-btn:hover{border-color:var(--main);color:var(--main-deep);}
+.filter-btn.active{background:var(--main);border-color:var(--main);color:#fff;}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
+.cat-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+}
+.cat-item .c-name{font-size:14.5px;font-weight:600;color:var(--text);}
+.cat-item .c-desc{font-size:12px;color:var(--text-3);display:block;margin-top:2px;}
+.cat-item .c-count{font-size:13px;color:var(--main);font-weight:700;}
+.no-result{display:none;padding:22px;text-align:center;color:var(--text-3);font-size:14px;background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius-card);}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:26px;box-shadow:var(--shadow);}
+.deep h2{font-size:22px;margin-bottom:8px;}
+.deep .deep-lead{font-size:14px;color:var(--text-3);margin-bottom:18px;padding-bottom:14px;border-bottom:1px dashed var(--line);}
+.deep h3{font-size:17px;color:var(--main-deep);margin:22px 0 9px;}
+.deep p{font-size:14.5px;color:var(--text-2);}
+.deep .quote{
+  border-left:3px solid var(--main);background:var(--panel-alt);padding:11px 15px;border-radius:0 8px 8px 0;
+  font-size:14px;color:var(--text-2);margin:14px 0;
+}
+.deep table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0;}
+.deep th,.deep td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+.deep th{background:var(--panel-alt);color:var(--main-deep);font-weight:600;}
+.deep .small{font-size:13px;color:var(--text-3);}
+
+/* 体验指南 步骤 */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+.step{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;position:relative;
+}
+.step .num{
+  width:26px;height:26px;border-radius:8px;background:var(--main);color:#fff;font-size:13px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-bottom:9px;
+}
+.step h3{font-size:15px;margin-bottom:6px;}
+.step p{font-size:13.5px;color:var(--text-2);margin:0;}
+
+/* FAQ */
+.faq-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow);}
+.faq-list details{border-bottom:1px solid var(--line);}
+.faq-list details:last-child{border-bottom:0;}
+.faq-list summary{
+  padding:14px 18px;font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;color:var(--text);
+}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:"+";color:var(--main);font-size:19px;font-weight:400;line-height:1;}
+.faq-list details[open] summary::after{content:"−";}
+.faq-list summary:hover{background:var(--panel-alt);}
+.faq-list .ans{padding:0 18px 16px;font-size:14px;color:var(--text-2);}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:12px;}
+.comment{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;
+}
+.comment .c-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.comment .avatar{
+  width:26px;height:26px;border-radius:50%;background:var(--main-soft);color:var(--main-deep);
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.comment .nick{font-size:13px;font-weight:600;color:var(--text);}
+.comment .c-time{font-size:11.5px;color:var(--text-3);margin-left:auto;}
+.comment p{font-size:13.5px;color:var(--text-2);margin:0;line-height:1.7;}
+
+/* 资讯 */
+.news-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;}
+.news-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--shadow);
+}
+.news-card img{width:100%;height:120px;object-fit:cover;}
+.news-card .nc-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;}
+.news-card h3{font-size:15px;line-height:1.45;}
+.news-card h3 a{color:var(--text);}
+.news-card h3 a:hover{color:var(--main);}
+.news-card time{font-size:12px;color:var(--text-3);}
+.news-card p{font-size:13px;color:var(--text-2);margin:0;}
+
+/* 相关推荐 标签索引 */
+.rec-index{display:flex;flex-wrap:wrap;gap:9px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:18px;box-shadow:var(--shadow);}
+.rec-index a{
+  display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:20px;
+  background:var(--panel-alt);border:1px solid var(--line);font-size:13.5px;color:var(--text-2);
+}
+.rec-index a:hover{background:var(--main-soft);border-color:#e8bccb;color:var(--main-deep);}
+.rec-index a .rnum{font-size:11.5px;color:var(--text-3);}
+
+/* 补充板块 时间线 */
+.timeline{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:20px 22px;box-shadow:var(--shadow);}
+.timeline ol{list-style:none;padding:0;margin:0;position:relative;}
+.timeline ol::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--main-soft);}
+.timeline li{position:relative;padding:0 0 16px 26px;font-size:14px;color:var(--text-2);}
+.timeline li::before{
+  content:"";position:absolute;left:1px;top:6px;width:14px;height:14px;border-radius:50%;
+  background:#fff;border:3px solid var(--main);
+}
+.timeline li:last-child{padding-bottom:0;}
+.timeline .t-time{font-size:12.5px;color:var(--main-deep);font-weight:600;display:block;}
+.timeline .t-title{font-size:14.5px;font-weight:600;color:var(--text);}
+
+/* 投稿互动 */
+.interact{
+  background:linear-gradient(120deg,#fdf1f4,#f2faf8);border:1px solid var(--line);border-radius:var(--radius-banner);
+  padding:24px;display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:22px;align-items:center;
+}
+.interact h2{font-size:20px;margin-bottom:8px;color:var(--main-deep);}
+.interact p{font-size:14px;color:var(--text-2);margin-bottom:14px;}
+.interact-actions{display:flex;flex-wrap:wrap;gap:10px;}
+.interact-fig{border-radius:12px;overflow:hidden;border:1px solid var(--line);}
+.interact-fig img{width:100%;height:130px;object-fit:cover;}
+
+/* 页尾 */
+.site-foot{background:#241a1d;color:#cdbfc3;margin-top:44px;padding:36px 0 20px;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:26px;}
+.site-foot .f-brand{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+.site-foot .f-brand svg{width:30px;height:30px;}
+.site-foot .f-brand span{color:#fff;font-weight:800;font-size:15.5px;}
+.site-foot p{font-size:13px;color:#a99a9f;line-height:1.7;}
+.site-foot h4{font-size:14px;color:#fff;margin-bottom:10px;}
+.site-foot ul{list-style:none;padding:0;margin:0;}
+.site-foot ul li{margin-bottom:7px;}
+.site-foot ul a{font-size:13px;color:#b7a7ac;}
+.site-foot ul a:hover{color:#ffd6e0;}
+.foot-bottom{border-top:1px solid #3a2c30;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#8b7c81;}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;width:42px;height:42px;border-radius:50%;
+  background:var(--main);color:#fff;border:0;cursor:pointer;box-shadow:0 6px 16px rgba(124,21,49,.3);
+  font-size:17px;display:none;align-items:center;justify-content:center;z-index:70;
+}
+.to-top.show{display:flex;}
+.to-top:hover{background:var(--main-deep);}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 264px;}
+  .channel-col{display:none;}
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-visual{height:190px;order:-1;}
+  .overview-grid{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+  .head-nav{display:none;}
+  .hamburger{display:flex;}
+  .interact{grid-template-columns:1fr;}
+}
+@media (max-width:740px){
+  :root{--ann-h:34px;--head-h:58px;}
+  .layout{grid-template-columns:minmax(0,1fr);}
+  .aside-col{position:static;order:2;}
+  .hero h1{font-size:26px;}
+  .hero{padding:22px 18px;}
+  .hero-stats{gap:16px;}
+  .search-box input{width:96px;}
+  .head-tools .btn-ghost{display:none;}
+  .news-list li{grid-template-columns:1fr;gap:4px;}
+  .foot-grid{grid-template-columns:1fr;}
+  .announce .ann-track{gap:18px;}
+  .deep{padding:18px;}
+  .section-head h2{font-size:19px;}
+  .to-top{right:12px;bottom:14px;width:38px;height:38px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 页头 -->
+<div class="sticky-wrap">
+  <div class="announce" aria-label="站点公告">
+    <span class="ann-brand">极品每日大赛外围颜值在线</span>
+    <div class="ann-track">
+      <span class="ann-item"><span class="ann-date">11-08</span>外围赛 A 组“夜航”造型评分开放投票</span>
+      <span class="ann-item"><span class="ann-date">11-07</span>新增 6 位选手图鉴：林澈、苏晚棠、程野、方只、阿榛、谢与</span>
+      <span class="ann-item"><span class="ann-date">11-06</span>场外花絮《后台四十分钟》上线</span>
+      <span class="ann-item"><span class="ann-date">11-05</span>第 4 轮“无妆出镜”规则修订说明</span>
+    </div>
+    <a class="ann-more" href="#news">全部更新</a>
+  </div>
+
+  <header class="site-head">
+    <a class="brand" href="/#hero" aria-label="返回首页顶部">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#b3244a"/><stop offset="1" stop-color="#7c1531"/>
+          </linearGradient>
+        </defs>
+        <rect width="64" height="64" rx="15" fill="url(#lg1)"/>
+        <path d="M16 46 L32 14 L48 46 Z" fill="none" stroke="#ffd9e2" stroke-width="3.4" stroke-linejoin="round"/>
+        <circle cx="32" cy="37" r="5.2" fill="#ffd9e2"/>
+        <path d="M25 51 h14" stroke="#ffd9e2" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">极品每日大赛外围颜值在线</span>
+    </a>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="#overview">赛事概览</a>
+      <a href="#picks">选手图鉴</a>
+      <a href="#updates">赛程动态</a>
+      <a href="#cats">分类频道</a>
+      <a href="#deep">深度解析</a>
+      <a href="#guide">观赛指南</a>
+      <a href="#faq">常见问答</a>
+      <a href="#news">相关资讯</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box">
+        <input type="search" id="siteSearch" placeholder="搜选手 / 造型 / 赛道" aria-label="站内搜索">
+        <button type="button" id="searchBtn">搜索</button>
+      </div>
+      <button type="button" class="btn-ghost" onclick="location.href='/#interact'">投稿</button>
+      <button type="button" class="hamburger" id="hamburger" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<div class="drawer-mask" id="drawerMask"></div>
+<nav class="drawer" id="drawer" aria-label="移动端导航">
+  <button type="button" class="drawer-close" id="drawerClose" aria-label="关闭菜单">×</button>
+  <h4>频道导航</h4>
+  <a href="#overview">赛事概览</a>
+  <a href="#picks">选手图鉴</a>
+  <a href="#updates">赛程动态</a>
+  <a href="#cats">分类频道</a>
+  <a href="#deep">深度解析</a>
+  <a href="#guide">观赛指南</a>
+  <a href="#faq">常见问答</a>
+  <a href="#comments">观众评论</a>
+  <a href="#news">相关资讯</a>
+  <a href="#rec">相关推荐</a>
+  <a href="#timeline">赛程时间线</a>
+  <a href="#interact">投稿与互动</a>
+</nav>
+
+<main>
+  <div class="container">
+
+    <!-- 首屏 -->
+    <section class="hero" id="hero">
+      <div class="hero-blur b1"></div>
+      <div class="hero-blur b2"></div>
+      <div class="hero-grid">
+        <div>
+          <span class="hero-tag"><i></i>2026 年 11 月 8 日 · 外围赛第 4 轮进行中</span>
+          <h1>极品每日大赛外围颜值在线</h1>
+          <p class="hero-desc">汇总每日大赛外围赛的选手图鉴、造型评分、场外花絮与规则修订记录。每天更新赛程结果、观众投票走向和后台实录，给蹲外围赛的观众一个能查人名、查造型、查规则的落点。</p>
+          <div class="hero-actions">
+            <button type="button" class="btn-primary" onclick="location.href='/#picks'">看今日选手图鉴</button>
+            <button type="button" class="btn-line" onclick="location.href='/#updates'">查最新赛程</button>
+          </div>
+          <div class="hero-stats">
+            <div><strong>128</strong>选手图鉴条目</div>
+            <div><strong>42</strong>场外围赛记录</div>
+            <div><strong>11-08</strong>最近更新</div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 300 250" role="presentation">
+            <defs>
+              <linearGradient id="cardg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#fdeef3"/>
+              </linearGradient>
+            </defs>
+            <rect x="26" y="34" width="180" height="118" rx="12" fill="url(#cardg)" stroke="#f0c9d5"/>
+            <circle cx="58" cy="70" r="16" fill="#f6d3dd"/>
+            <rect x="84" y="58" width="96" height="9" rx="4" fill="#e9b9c7"/>
+            <rect x="84" y="76" width="66" height="7" rx="3" fill="#f2d3dc"/>
+            <rect x="44" y="104" width="140" height="7" rx="3" fill="#f2d3dc"/>
+            <rect x="44" y="120" width="100" height="7" rx="3" fill="#f2d3dc"/>
+            <rect x="66" y="164" width="192" height="66" rx="12" fill="#ffffff" stroke="#cfe6e2"/>
+            <path d="M92 210 l16-26 l16 26 z" fill="none" stroke="#1f7a72" stroke-width="2.4" stroke-linejoin="round"/>
+            <circle cx="108" cy="202" r="4" fill="#1f7a72"/>
+            <rect x="140" y="182" width="96" height="8" rx="4" fill="#cfe6e2"/>
+            <rect x="140" y="198" width="70" height="7" rx="3" fill="#e0f0ee"/>
+            <rect x="140" y="212" width="84" height="7" rx="3" fill="#e0f0ee"/>
+            <circle cx="252" cy="52" r="14" fill="#b3244a" opacity=".12"/>
+            <circle cx="272" cy="90" r="8" fill="#1f7a72" opacity=".16"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout">
+      <!-- 左频道栏 -->
+      <aside class="channel-col">
+        <div class="channel-card">
+          <h3>频道索引</h3>
+          <ul class="channel-list">
+            <li><a href="#overview" class="active">赛事概览<span class="cnt">01</span></a></li>
+            <li><a href="#picks">选手图鉴<span class="cnt">128</span></a></li>
+            <li><a href="#updates">赛程动态<span class="cnt">11</span></a></li>
+            <li><a href="#cats">分类频道<span class="cnt">08</span></a></li>
+            <li><a href="#deep">深度解析<span class="cnt">05</span></a></li>
+            <li><a href="#guide">观赛指南<span class="cnt">04</span></a></li>
+            <li><a href="#faq">常见问答<span class="cnt">06</span></a></li>
+            <li><a href="#comments">观众评论<span class="cnt">16</span></a></li>
+            <li><a href="#news">相关资讯<span class="cnt">06</span></a></li>
+            <li><a href="#rec">相关推荐<span class="cnt">08</span></a></li>
+            <li><a href="#timeline">赛程时间线<span class="cnt">07</span></a></li>
+            <li><a href="#interact">投稿与互动</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- 主内容 -->
+      <div class="main-col">
+
+        <!-- 1 概览 -->
+        <section class="section" id="overview">
+          <div class="section-head">
+            <h2>外围赛颜值赛道在比什么</h2>
+            <span class="sub">赛道构成 · 评分口径 · 当前看点</span>
+          </div>
+          <div class="overview">
+            <div class="overview-grid">
+              <div>
+                <p>每日大赛的外围赛是正式赛之前的公开单元，选手按抽签分组出镜，单场 12 分钟，评分由三块组成：现场评委的造型完成度（占 50%）、观众实时投票（占 35%）、后台摄影组的镜头表现（占 15%）。第 4 轮从 11 月 2 日开跑，到 11 月 8 日已走完 A、B 两组，C 组排期在 11 月 10 日。</p>
+                <p>颜值这条赛道并不只看脸。造型完成度里拆了四小项——妆面、发型、服装与整体气质的匹配度，其中“匹配度”是争议最大的一项，评委手里有一份 8 页的评分细则，第 3 页写明“造型与选手自选曲目气质的贴合”，这一条在 11 月 5 日的规则修订里被加了限定语。</p>
+                <p>目前值得盯的具体条目：A 组第一的林澈以 9.2 分领跑，B 组的苏晚棠靠“素色长衫 + 短发”拿到 8.9；争议集中在程野的 8.1 分，评委给的理由是服装与曲目错位，而观众投票他排第二。后台花絮《后台四十分钟》记录了方只临场换发型的过程，成为本周播放最高的一条。</p>
+                <div class="ov-tags">
+                  <span class="tag">造型完成度</span>
+                  <span class="tag">观众实时投票</span>
+                  <span class="tag">镜头表现分</span>
+                  <span class="tag t-accent">无妆出镜规则</span>
+                  <span class="tag t-line">后台花絮</span>
+                  <span class="tag t-line">评分细则第 3 页</span>
+                </div>
+              </div>
+              <figure class="ov-figure">
+                <img src="https://picsum.photos/seed/waimei-overview01/400/300" width="400" height="300" loading="lazy" alt="外围赛后台化妆区，选手在镜前调整发型">
+                <figcaption>11 月 6 日后台实录，方只临场改发型前的镜前画面</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 精选 -->
+        <section class="section" id="picks">
+          <div class="section-head">
+            <h2>今日选手图鉴</h2>
+            <span class="sub">按当前轮次评分排序 · 共 8 条</span>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/linche-pick01/400/300" width="400" height="300" loading="lazy" alt="林澈在 A 组出镜时的深蓝立领造型">
+                <span class="badge">A 组</span><span class="heat">9.2 分</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">林澈 · 深蓝立领套装</a></h3>
+                <p class="look">立领压住颈部线条，配短寸发型，把脸型优势全露出来。评委给妆面 9.5、匹配 9.0，唯一下调的是镜头表现 8.8，理由是转身时肩线有半秒没跟上镜头。</p>
+                <div class="card-tags"><span>立领造型</span><span>短寸</span><span>妆面 9.5</span></div>
+                <div class="card-meta"><span>11-08 更新</span><span>观众票 3.1 万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/suwantang-pick02/400/300" width="400" height="300" loading="lazy" alt="苏晚棠素色长衫配短发的舞台造型">
+                <span class="badge">B 组</span><span class="heat">8.9 分</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">苏晚棠 · 素色长衫</a></h3>
+                <p class="look">整套只用米白一种颜色，靠剪裁撑住，短发把颈线拉长。评委点评原话是“减法做对了”，妆面 8.6 被扣在眼影层次偏薄。</p>
+                <div class="card-tags"><span>素色长衫</span><span>短发</span><span>减法造型</span></div>
+                <div class="card-meta"><span>11-07 更新</span><span>观众票 2.8 万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/chengye-pick03/400/300" width="400" height="300" loading="lazy" alt="程野穿亮片夹克参加外围赛的造型">
+                <span class="badge">B 组</span><span class="heat">8.1 分</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">程野 · 亮片夹克</a></h3>
+                <p class="look">争议条目。自选曲目是慢板民谣，服装却走夜店路线，评委以“气质错位”扣到 8.1；观众票排 B 组第二，评论区为这条吵了两天。</p>
+                <div class="card-tags"><span>亮片夹克</span><span>气质错位</span><span>争议条目</span></div>
+                <div class="card-meta"><span>11-07 更新</span><span>观众票 2.9 万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/fangzhi-pick04/400/300" width="400" height="300" loading="lazy" alt="方只后台改发型后的侧分造型">
+                <span class="badge">A 组</span><span class="heat">8.7 分</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">方只 · 侧分改发</a></h3>
+                <p class="look">原定中分，开赛前四十分钟改成侧分，理由是灯光下中分会压额头。改完镜头表现从 8.2 提到 8.9，这条被写进《后台四十分钟》。</p>
+                <div class="card-tags"><span>侧分</span><span>临场改发</span><span>镜头表现 8.9</span></div>
+                <div class="card-meta"><span>11-06 更新</span><span>观众票 2.4 万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/azhen-pick05/400/300" width="400" height="300" loading="lazy" alt="阿榛穿低饱和绿衬衫的素颜出镜画面">
+                <span class="badge">C 组</span><span class="heat">待评</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">阿榛 · 低饱和绿衬衫</a></h3>
+                <p class="look">C 组排期 11 月 10 日，目前只有定妆照。绿色选得很克制，配合第 4 轮“无妆出镜”条款，妆面部分预计走裸妆路线。</p>
+                <div class="card-tags"><span>低饱和绿</span><span>无妆出镜</span><span>待评</span></div>
+                <div class="card-meta"><span>11-08 更新</span><span>定妆照已出</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/xieyu-pick06/400/300" width="400" height="300" loading="lazy" alt="谢与穿黑色高领毛衣的舞台侧拍">
+                <span class="badge">C 组</span><span class="heat">待评</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">谢与 · 黑色高领</a></h3>
+                <p class="look">高领把下颌线压出来，是 C 组里造型最保守的一位。风险在于无妆条款下，高领容易显得脸色发闷，后台摄影组已提前试过两种补光。</p>
+                <div class="card-tags"><span>黑色高领</span><span>保守造型</span><span>补光测试</span></div>
+                <div class="card-meta"><span>11-08 更新</span><span>定妆照已出</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/yehang-pick07/400/300" width="400" height="300" loading="lazy" alt="夜航主题造型的银灰渐变外套特写">
+                <span class="badge">A 组</span><span class="heat">8.4 分</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">沈砚 · “夜航”银灰渐变</a></h3>
+                <p class="look">外套做了手工渐变，从银灰到深蓝，走的是主题造型路线。11 月 8 日开放造型评分投票，目前造型单项票数 1.7 万，仅次于林澈。</p>
+                <div class="card-tags"><span>夜航主题</span><span>手工渐变</span><span>造型投票</span></div>
+                <div class="card-meta"><span>11-08 更新</span><span>造型票 1.7 万</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="https://picsum.photos/seed/luoqi-pick08/400/300" width="400" height="300" loading="lazy" alt="洛七穿浅卡其工装外套的外围赛造型">
+                <span class="badge">B 组</span><span class="heat">8.3 分</span>
+              </div>
+              <div class="card-body">
+                <h3><a href="#picks">洛七 · 浅卡其工装</a></h3>
+                <p class="look">工装外套加白 T，走日常路线。评委肯定“不装”，但妆面 8.0 是 B 组偏低的一档，问题出在眉形修得过于规整，与工装的松弛感不搭。</p>
+                <div class="card-tags"><span>工装外套</span><span>日常路线</span><span>眉形扣分</span></div>
+                <div class="card-meta"><span>11-07 更新</span><span>观众票 2.1 万</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3 动态 -->
+        <section class="section" id="updates">
+          <div class="section-head">
+            <h2>赛程与后台动态</h2>
+            <span class="sub">11-01 至 11-08 · 11 条</span>
+          </div>
+          <ul class="news-list" id="updateList">
+            <li><time>11-08</time><div><div class="n-title"><a href="#updates">A 组“夜航”造型评分投票开放</a><span class="n-tag">投票</span></div><div class="n-sum">投票窗口截至 11 月 9 日 22:00，沈砚的银灰渐变外套暂列造型单项第一，林澈的立领套装紧随其后，两者差 2400 票。</div></div></li>
+            <li><time>11-08</time><div><div class="n-title"><a href="#updates">C 组定妆照公布，阿榛与谢与同组</a></div><div class="n-sum">六人定妆照在上午 10 点放出，阿榛的低饱和绿衬衫与谢与的黑色高领被排在同一时段，C 组正式出镜定在 11 月 10 日 19:30。</div></div></li>
+            <li><time>11-07</time><div><div class="n-title"><a href="#updates">B 组评分公布，程野 8.1 引发争议</a></div><div class="n-sum">B 组五人评分在 11 月 7 日 21:40 挂出，程野因“服装与曲目气质错位”被扣，评委组当晚发了 3 条说明，仍未平息讨论。</div></div></li>
+            <li><time>11-07</time><div><div class="n-title"><a href="#updates">苏晚棠 8.9 分，评委称“减法做对了”</a></div><div class="n-sum">素色长衫在五人中造型分最高，妆面 8.6 被扣在眼影层次。评委李漱在说明里提到“米白比纯白更容易吃光”。</div></div></li>
+            <li><time>11-06</time><div><div class="n-title"><a href="#updates">《后台四十分钟》花絮上线</a></div><div class="n-sum">记录了方只从 18:50 到 19:30 的临场改发过程，包括两次试光和一次发型师与造型师的分歧，全片 6 分 12 秒。</div></div></li>
+            <li><time>11-06</time><div><div class="n-title"><a href="#updates">镜头表现分新增“转身跟焦”细项</a></div><div class="n-sum">后台摄影组把原来的单一口径拆成转身、走位、定点三项，各占 5 分，从第 4 轮 C 组开始执行，A、B 两组不回溯。</div></div></li>
+            <li><time>11-05</time><div><div class="n-title"><a href="#updates">第 4 轮“无妆出镜”规则修订</a></div><div class="n-sum">原条款只写“不得使用假睫毛与美瞳”，修订后追加“允许基础遮瑕与防晒”，并明确修容类产品需在后台登记，登记表共 14 项。</div></div></li>
+            <li><time>11-04</time><div><div class="n-title"><a href="#updates">A 组五人完成出镜，林澈领跑</a></div><div class="n-sum">11 月 4 日 20:15 A 组收场，林澈 9.2 分排在首位，方只 8.7、沈砚 8.4，后两位分别是 8.0 与 7.8。</div></div></li>
+            <li><time>11-03</time><div><div class="n-title"><a href="#updates">评委名单公布，共 5 人</a></div><div class="n-sum">造型评委 3 人、摄影评委 1 人、观众代表 1 人。观众代表每轮更换，第 4 轮由 11 月 1 日抽签产生的周棠担任。</div></div></li>
+            <li><time>11-02</time><div><div class="n-title"><a href="#updates">第 4 轮抽签分组结果</a></div><div class="n-sum">A 组 5 人、B 组 5 人、C 组 6 人。C 组人数多出一位，是因为上一轮退赛的选手补位，补位名单在 11 月 1 日公示过。</div></div></li>
+            <li><time>11-01</time><div><div class="n-title"><a href="#updates">第 3 轮复盘：造型分与观众票的偏差</a></div><div class="n-sum">第 3 轮有 2 位选手造型分进前五但观众票排在后三，差值最大的一位相差 1.1 万分，复盘文档列了 4 条可能原因。</div></div></li>
+          </ul>
+        </section>
+
+        <!-- 4 分类 -->
+        <section class="section" id="cats">
+          <div class="section-head">
+            <h2>分类频道</h2>
+            <span class="sub">点选筛选下方条目</span>
+          </div>
+          <div class="filter-bar" id="filterBar" role="group" aria-label="分类筛选">
+            <button type="button" class="filter-btn active" data-cat="all">全部</button>
+            <button type="button" class="filter-btn" data-cat="造型">造型解析</button>
+            <button type="button" class="filter-btn" data-cat="妆面">妆面细节</button>
+            <button type="button" class="filter-btn" data-cat="规则">规则说明</button>
+            <button type="button" class="filter-btn" data-cat="花絮">后台花絮</button>
+            <button type="button" class="filter-btn" data-cat="评分">评分争议</button>
+            <button type="button" class="filter-btn" data-cat="投票">观众投票</button>
+            <button type="button" class="filter-btn" data-cat="图鉴">选手图鉴</button>
+          </div>
+          <div class="cat-grid" id="catGrid">
+            <div class="cat-item" data-cat="造型"><div><span class="c-name">造型解析</span><span class="c-desc">立领、长衫、工装、主题渐变</span></div><span class="c-count">28</span></div>
+            <div class="cat-item" data-cat="妆面"><div><span class="c-name">妆面细节</span><span class="c-desc">裸妆、遮瑕、眉形、眼影层次</span></div><span class="c-count">19</span></div>
+            <div class="cat-item" data-cat="规则"><div><span class="c-name">规则说明</span><span class="c-desc">无妆条款、评分细则、登记表</span></div><span class="c-count">12</span></div>
+            <div class="cat-item" data-cat="花絮"><div><span class="c-name">后台花絮</span><span class="c-desc">改发实录、试光、造型分歧</span></div><span class="c-count">16</span></div>
+            <div class="cat-item" data-cat="评分"><div><span class="c-name">评分争议</span><span class="c-desc">气质错位、单项扣分、复核申请</span></div><span class="c-count">9</span></div>
+            <div class="cat-item" data-cat="投票"><div><span class="c-name">观众投票</span><span class="c-desc">实时票数、造型单项、投票窗口</span></div><span class="c-count">21</span></div>
+            <div class="cat-item" data-cat="图鉴"><div><span class="c-name">选手图鉴</span><span class="c-desc">128 位选手的造型与评分档案</span></div><span class="c-count">128</span></div>
+            <div class="cat-item" data-cat="造型"><div><span class="c-name">镜头表现</span><span class="c-desc">转身跟焦、走位、定点三项拆分</span></div><span class="c-count">7</span></div>
+          </div>
+          <div class="no-result" id="noResult">没有匹配的条目，换个关键词试试。</div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="section" id="deep">
+          <div class="deep">
+            <h2>8.1 分到底扣在哪：外围赛造型评分的四个可核对环节</h2>
+            <p class="deep-lead">以 B 组程野的争议评分为样本，拆开评分表的每一项，看清分数是怎么一步步掉下来的。</p>
+
+            <h3>一、评分表的结构：50 / 35 / 15 怎么落到具体小项</h3>
+            <p>外围赛的评分表并不是一个总分直接给出来。造型完成度 50 分拆成妆面 15、发型 10、服装 15、气质匹配 10；观众实时投票 35 分按排名折算；镜头表现 15 分在第 4 轮之前是单项，11 月 6 日之后拆成转身、走位、定点各 5 分。这套结构在 11 月 3 日公布的评委名单说明里附了表格，表格第 2 页明确写了“气质匹配以选手自选曲目为参照”。</p>
+            <p>程野的失分集中在这一项。慢板民谣配亮片夹克，评委给的匹配分是 4.5/10，其余三项分别是妆面 12.5/15、发型 8/10、服装 11/15。四项相加 36，折算成 50 分制是 36.0，加上观众票排名第二的 30.8 和镜头表现的 12.1，合计 78.9，四舍五入成 8.1 分（十分制换算）。</p>
+
+            <h3>二、“气质错位”不是主观词，它有对照表</h3>
+            <p>评委李漱在 11 月 7 日晚的说明里贴了一份对照表，把曲目分成四类：叙事慢板、节奏快板、器乐纯音乐、方言民谣，每类对应三到四种推荐服装方向。慢板民谣对应的是“低饱和纯色”“垂坠面料”“少装饰”。亮片夹克三条都不满足。</p>
+            <div class="quote">“不是亮片不能穿，是亮片配慢板会抢走听觉注意力。观众看舞台，眼睛先于耳朵。”——李漱 11 月 7 日说明原文</div>
+            <p>这份对照表在 11 月 5 日的规则修订里被正式引用，修订文本第 3 条写的是“气质匹配评分可参照曲目分类对照表，评委需在评分栏注明参照类别”。也就是说，扣分要留痕。程野那一栏的备注是“叙事慢板 / 未匹配”，这是可查的。</p>
+
+            <h3>三、观众票与评委分的偏差，出在投票时段的设置上</h3>
+            <p>B 组观众投票窗口是出镜结束后 15 分钟内开放，持续 40 分钟。程野的舞台在 21:05 结束，投票 21:20 开放。这个时间点，社交平台上关于“亮片夹克”的讨论已经开始发酵，带图讨论在 21:12 到 21:35 之间出现了一个明显的峰值。</p>
+            <table>
+              <thead><tr><th>时段</th><th>程野票数增量</th><th>苏晚棠票数增量</th><th>同期讨论帖数</th></tr></thead>
+              <tbody>
+                <tr><td>21:20—21:30</td><td>4200</td><td>5100</td><td>86</td></tr>
+                <tr><td>21:30—21:40</td><td>9600</td><td>3800</td><td>214</td></tr>
+                <tr><td>21:40—21:50</td><td>7100</td><td>2600</td><td>158</td></tr>
+                <tr><td>21:50—22:00</td><td>3900</td><td>2100</td><td>63</td></tr>
+              </tbody>
+            </table>
+            <p>21:30 到 21:40 这十分钟，程野票数增量是前十分钟的 2.3 倍，讨论帖数也翻了一倍多。投票窗口与讨论峰值重叠，票数里混进了多少“看热闹投票”，没法精确区分。这一点在 11 月 1 日的第 3 轮复盘文档里也提到过，偏差最大的一位相差 1.1 万票，复盘列的四条原因中第一条就是“投票时段与讨论峰值重叠”。</p>
+
+            <h3>四、复核申请怎么走，以及它为什么很少成功</h3>
+            <p>选手对单项分有异议，可以在评分公布后 24 小时内提交复核申请，需要写清争议项、参照条款和希望复核的具体分数。第 3 轮有 3 人提交，1 人成功——成功的那位是因为评委备注栏漏填了参照类别，属于程序问题，不是分数判断问题。</p>
+            <ul>
+              <li>复核只查程序：备注是否完整、参照条款是否引用正确、分数加总是否有误。</li>
+              <li>不查审美判断：评委认为亮片与慢板不搭，这条不在复核范围内。</li>
+              <li>时限 24 小时，从评分挂出时间算，不是从选手看到的时间算。</li>
+              <li>结果在提交后 48 小时内公布，公布形式是评分表更新，不单独发公告。</li>
+            </ul>
+            <p>程野的复核申请在 11 月 8 日 09:20 提交，截至当天 18:00 尚未公布结果。从程序上看，他那一栏的备注是完整的，复核能动的空间很小。</p>
+            <p class="small">补充一条容易被忽略的：镜头表现的转身跟焦项，评分依据是后台摄影组的原始素材时间码，不是直播画面。直播有 1.2 秒延迟，用直播画面核对会得出不同结论。</p>
+          </div>
+        </section>
+
+        <!-- 6 观赛指南 -->
+        <section class="section" id="guide">
+          <div class="section-head">
+            <h2>怎么看一场外围赛才不浪费时间</h2>
+            <span class="sub">顺序 · 判断依据 · 条目比较</span>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="num">1</div>
+              <h3>先看分组和曲目，不看造型照</h3>
+              <p>定妆照是棚拍，光是调过的。真正决定分数的是舞台光下的样子。先查选手自选曲目属于哪一类，再看服装方向对不对，这一步能过滤掉大半“照片好看但分不高”的条目。</p>
+            </div>
+            <div class="step">
+              <div class="num">2</div>
+              <h3>评分表比总分有用</h3>
+              <p>总分 8.1 和 8.1 可能完全不是一回事。妆面 14、匹配 4.5 的 8.1，和妆面 11、匹配 8 的 8.1，前者是造型冒险失败，后者是基本功不够。看四个小项的分布，比看最终数字快。</p>
+            </div>
+            <div class="step">
+              <div class="num">3</div>
+              <h3>投票时段决定票数含金量</h3>
+              <p>投票窗口和社交讨论峰值重叠的场次，票数会被放大。查一下选手出镜结束时间与投票开放时间的间隔，间隔越短、讨论越热，票数越要打折看。B 组就是个例子。</p>
+            </div>
+            <div class="step">
+              <div class="num">4</div>
+              <h3>同类条目横向比，别纵向比</h3>
+              <p>素色长衫和亮片夹克没法直接比高低，得放在同一曲目类别里比。想看“减法造型”做到什么程度算好，拿苏晚棠和洛七对比更有意义，两人都走日常路线，差别在妆面处理。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="section" id="faq">
+          <div class="section-head">
+            <h2>常见问答</h2>
+            <span class="sub">围绕规则、评分与赛程</span>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>外围赛的“无妆出镜”到底禁什么、允许什么？</summary>
+              <div class="ans">禁的是假睫毛、美瞳和明显修容，允许基础遮瑕与防晒。11 月 5 日的修订把遮瑕和防晒写进了允许清单，修容类产品需在后台登记，登记表列了 14 项产品类别。判断标准是镜头下是否看得出修容边界，不是有没有涂东西。</div>
+            </details>
+            <details>
+              <summary>程野 8.1 分里的“气质错位”是怎么算出来的？</summary>
+              <div class="ans">气质匹配占造型完成度 10 分，评委按曲目分类对照表打分。程野自选叙事慢板，对照表推荐低饱和纯色、垂坠面料、少装饰，亮片夹克三条都不满足，匹配分给到 4.5。其余三项妆面 12.5、发型 8、服装 11，加总折算后是 8.1 分。</div>
+            </details>
+            <details>
+              <summary>选手对评分不满，能申请复核吗？复核查什么？</summary>
+              <div class="ans">可以，评分公布后 24 小时内提交，写清争议项和参照条款。复核只查程序——备注是否完整、条款引用是否正确、加总是否有误，不查审美判断。第 3 轮 3 人申请、1 人成功，成功原因是备注栏漏填参照类别。结果在 48 小时内以评分表更新的形式公布。</div>
+            </details>
+            <details>
+              <summary>观众投票的分数是怎么折算进总分的？</summary>
+              <div class="ans">按组内排名折算，35 分满分。B 组五人，第一名拿满 35，第二名 30.8，依次递减，最后一名 17.5。折算表在评分说明第 4 页，每一档的差值不完全等距，中间档差得少，两头差得多。</div>
+            </details>
+            <details>
+              <summary>C 组为什么比 A、B 两组多一个人？</summary>
+              <div class="ans">补位。上一轮有选手退赛，空出的名额在 11 月 1 日公示后补进 C 组，所以 C 组是 6 人而不是 5 人。补位选手不参与上一轮的分数继承，从零开始计分，这一点在抽签结果公告里写明了。</div>
+            </details>
+            <details>
+              <summary>镜头表现分改成三项之后，A、B 两组的分数会重算吗？</summary>
+              <div class="ans">不会。新口径从第 4 轮 C 组开始执行，A、B 两组按原单一口径计分，不回溯。这意味着跨组比较镜头表现分时要留意口径差异，A 组的 8.8 和 C 组的 8.8 不完全可比。</div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 8 评论 -->
+        <section class="section" id="comments">
+          <div class="section-head">
+            <h2>观众在说什么</h2>
+            <span class="sub">16 条 · 11-05 至 11-08</span>
+          </div>
+          <div class="comment-grid">
+            <div class="comment"><div class="c-head"><span class="avatar">柚</span><span class="nick">柚子不酸</span><span class="c-time">11-08 19:42</span></div><p>沈砚那件渐变外套的袖口处理是真的细，银灰到深蓝的过渡在灯下没有断层。1.7 万票不算多，但造型单项我投了。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">半</span><span class="nick">半截铅笔</span><span class="c-time">11-08 18:10</span></div><p>程野这事吵两天了。亮片夹克配慢板民谣，我第一眼也觉得怪，但票数第二说明观众吃这套。评委和观众的审美本来就不是一回事。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">阿</span><span class="nick">阿榛的定妆照存了三张</span><span class="c-time">11-08 16:55</span></div><p>低饱和绿衬衫选得聪明，无妆条款下这个颜色最不挑肤色。就等 11 月 10 日了。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">老</span><span class="nick">老周看赛</span><span class="c-time">11-08 15:22</span></div><p>评分表拆开看确实清楚多了。以前只看总分，现在先看匹配分，低于 6 的基本可以跳过。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">林</span><span class="nick">林间有风</span><span class="c-time">11-08 13:08</span></div><p>林澈转身那半秒肩线没跟上，直播里其实不太看得出来，得看后台时间码才明显。8.8 的镜头分给得不算冤。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">三</span><span class="nick">三分钟热度</span><span class="c-time">11-08 11:37</span></div><p>昨天蹲到凌晨，投票窗口一开票数涨得吓人，后来才知道是讨论帖带起来的。难怪复盘文档要写这一条。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">苏</span><span class="nick">苏打水没气</span><span class="c-time">11-07 22:14</span></div><p>素色长衫那套我看了三遍回放。米白比纯白难穿，吃光是真的，眼影层次薄了点但不影响整体。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">镜</span><span class="nick">镜前灯</span><span class="c-time">11-07 21:03</span></div><p>眉形修太规整这个点评有点狠，但确实，工装要的是松弛感，眉毛一板正整个人就紧了。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">不</span><span class="nick">不吃香菜</span><span class="c-time">11-07 19:48</span></div><p>《后台四十分钟》里发型师和造型师那段分歧挺真实的，两个人各说各的，最后改了侧分。比正片好看。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">小</span><span class="nick">小满未满</span><span class="c-time">11-07 17:31</span></div><p>谢与的黑色高领我持保留意见。无妆出镜配高领，脸容易显闷，补光试过两种也不一定救得回来。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">风</span><span class="nick">风里有雨</span><span class="c-time">11-07 14:20</span></div><p>C 组六个人，补位那位从零计分，规则上没问题，但和同组其他人比起点就不一样。抽签公告写清楚了，我倒觉得没什么可说的。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">路</span><span class="nick">路过的猫</span><span class="c-time">11-06 23:05</span></div><p>看不太懂评分的四小项怎么加总，算了半天没对上。可能我数学不行。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">九</span><span class="nick">九十斤的秤</span><span class="c-time">11-06 20:41</span></div><p>第 3 轮那位造型分前五、观众票后三的，我到现在还记得。差 1.1 万票，复盘列了四条原因，第一条就是投票时段。这次 B 组又是一样的路数。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">阿</span><span class="nick">阿尔法不是狗</span><span class="c-time">11-06 16:18</span></div><p>镜头表现拆三项之后，转身跟焦终于单独算了。以前这个扣分扣得不明不白，现在至少知道扣在哪。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">夜</span><span class="nick">夜班的灯</span><span class="c-time">11-05 22:50</span></div><p>登记表 14 项产品类别，我一个外行看下来只认识遮瑕和防晒，修容那几项名字都念不顺。不过规则写细总是好事。</p></div>
+            <div class="comment"><div class="c-head"><span class="avatar">早</span><span class="nick">早起失败</span><span class="c-time">11-05 09:12</span></div><p>11 月 10 日 C 组 19:30 开，我调好闹钟了。这次不想再错过投票窗口。</p></div>
+          </div>
+        </section>
+
+        <!-- 9 资讯 -->
+        <section class="section" id="news">
+          <div class="section-head">
+            <h2>相关资讯</h2>
+            <span class="sub">赛场内外 · 6 条</span>
+          </div>
+          <div class="news-cards">
+            <article class="news-card">
+              <img src="https://picsum.photos/seed/news-yehang/600/400" width="600" height="400" loading="lazy" alt="夜航主题造型投票现场的大屏显示">
+              <div class="nc-body">
+                <h3><a href="#news">“夜航”造型投票首日 1.7 万票，窗口明晚关闭</a></h3>
+                <time>11-08</time>
+                <p>投票从 11 月 8 日 10:00 开放，截至 19:00 累计 1.7 万票。投票页面显示，造型单项与总分投票分开统计，前者不影响后者。</p>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://picsum.photos/seed/news-cgroup/600/400" width="600" height="400" loading="lazy" alt="C 组六位选手的定妆照排成一排">
+              <div class="nc-body">
+                <h3><a href="#news">C 组定妆照上午放出，六人造型方向全不同</a></h3>
+                <time>11-08</time>
+                <p>六人分别走低饱和绿、黑色高领、灰蓝针织、米色风衣、深棕皮衣与白衬衫路线。后台摄影组为其中两人各试了两种补光方案。</p>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://picsum.photos/seed/news-chengye/600/400" width="600" height="400" loading="lazy" alt="程野亮片夹克的舞台灯光下特写">
+              <div class="nc-body">
+                <h3><a href="#news">程野复核申请已提交，结果 48 小时内公布</a></h3>
+                <time>11-08</time>
+                <p>提交时间 09:20，争议项为气质匹配。评委组确认备注栏完整，复核重点是加总与条款引用，评分表更新后不再单独发公告。</p>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://picsum.photos/seed/news-huaxu/600/400" width="600" height="400" loading="lazy" alt="后台发型师与造型师讨论的画面">
+              <div class="nc-body">
+                <h3><a href="#news">《后台四十分钟》播放量破 30 万</a></h3>
+                <time>11-07</time>
+                <p>上线不到 24 小时，播放量达 30.4 万。片中两次试光与一次造型分歧被剪进正片，方只本人未出镜解说。</p>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://picsum.photos/seed/news-guize/600/400" width="600" height="400" loading="lazy" alt="无妆出镜规则修订文本与产品登记表">
+              <div class="nc-body">
+                <h3><a href="#news">无妆条款修订文本公布，登记表列 14 项</a></h3>
+                <time>11-05</time>
+                <p>修订追加允许基础遮瑕与防晒，修容类产品需登记。登记表共 14 项产品类别，从第 4 轮 C 组开始执行，A、B 两组不追溯。</p>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://picsum.photos/seed/news-fupan/600/400" width="600" height="400" loading="lazy" alt="第 3 轮复盘文档的评分对照表">
+              <div class="nc-body">
+                <h3><a href="#news">第 3 轮复盘文档公开，列出四条偏差原因</a></h3>
+                <p>文档 6 页，含两张对照表。偏差最大的一位造型分进前五、观众票后三，差值 1.1 万票，第一条原因指向投票时段与讨论峰值重叠。</p>
+                <time>11-01</time>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 10 相关推荐 -->
+        <section class="section" id="rec">
+          <div class="section-head">
+            <h2>相关推荐</h2>
+            <span class="sub">按具体条目与方向索引</span>
+          </div>
+          <div class="rec-index">
+            <a href="#picks">林澈立领套装的妆面拆解 <span class="rnum">9.5</span></a>
+            <a href="#picks">苏晚棠素色长衫 <span class="rnum">8.9</span></a>
+            <a href="#deep">气质匹配对照表怎么用 <span class="rnum">规则</span></a>
+            <a href="#guide">投票时段与票数含金量 <span class="rnum">方法</span></a>
+            <a href="#picks">方只侧分改发实录 <span class="rnum">8.7</span></a>
+            <a href="#deep">复核申请的四条限制 <span class="rnum">程序</span></a>
+            <a href="#faq">无妆出镜允许清单 <span class="rnum">14 项</span></a>
+            <a href="#picks">C 组六人定妆照对比 <span class="rnum">11-10</span></a>
+          </div>
+        </section>
+
+        <!-- 11 时间线补充 -->
+        <section class="section" id="timeline">
+          <div class="section-head">
+            <h2>第 4 轮赛程时间线</h2>
+            <span class="sub">11-01 至 11-10</span>
+          </div>
+          <div class="timeline">
+            <ol>
+              <li><span class="t-time">11-01</span><span class="t-title">第 3 轮复盘文档公开</span><br>6 页文档，含评分与观众票偏差对照表。</li>
+              <li><span class="t-time">11-02</span><span class="t-title">第 4 轮抽签分组</span><br>A 组 5 人、B 组 5 人、C 组 6 人（含 1 位补位）。</li>
+              <li><span class="t-time">11-03</span><span class="t-title">评委名单公布</span><br>造型 3 人、摄影 1 人、观众代表 1 人，观众代表为周棠。</li>
+              <li><span class="t-time">11-04</span><span class="t-title">A 组出镜完成</span><br>林澈 9.2 领跑，方只 8.7、沈砚 8.4。</li>
+              <li><span class="t-time">11-05</span><span class="t-title">无妆出镜规则修订</span><br>追加允许遮瑕与防晒，修容类产品需登记 14 项。</li>
+              <li><span class="t-time">11-07</span><span class="t-title">B 组评分公布</span><br>苏晚棠 8.9、程野 8.1 引发争议。</li>
+              <li><span class="t-time">11-08</span><span class="t-title">C 组定妆照与“夜航”造型投票开放</span><br>投票窗口至 11 月 9 日 22:00。</li>
+              <li><span class="t-time">11-10</span><span class="t-title">C 组正式出镜</span><br>19:30 开始，六人按抽签顺序上场。</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- 12 投稿互动 -->
+        <section class="section" id="interact">
+          <div class="interact">
+            <div>
+              <h2>投稿你的场外观察</h2>
+              <p>后台花絮、造型细节、投票时段截图都收。要求写清场次、选手名和具体时间，附一张现场图更好。本周已收到 37 份投稿，其中 6 份被《后台四十分钟》第二期采用。</p>
+              <div class="interact-actions">
+                <button type="button" class="btn-primary" onclick="location.href='/#interact'">提交图文投稿</button>
+                <button type="button" class="btn-line" onclick="location.href='/#comments'">去评论区讨论</button>
+              </div>
+            </div>
+            <figure class="interact-fig">
+              <img src="https://picsum.photos/seed/tougao-backstage/400/300" width="400" height="300" loading="lazy" alt="观众投稿的后台走廊现场照片">
+            </figure>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 右辅助栏 -->
+      <aside class="aside-col">
+        <div class="side-card">
+          <h3>造型单项票数榜</h3>
+          <ol class="rank-list">
+            <li><div><span class="r-name">沈砚 · 夜航渐变</span><span class="r-sub">1.7 万票 · A 组</span></div></li>
+            <li><div><span class="r-name">林澈 · 深蓝立领</span><span class="r-sub">1.46 万票 · A 组</span></div></li>
+            <li><div><span class="r-name">苏晚棠 · 素色长衫</span><span class="r-sub">1.12 万票 · B 组</span></div></li>
+            <li><div><span class="r-name">程野 · 亮片夹克</span><span class="r-sub">0.98 万票 · B 组</span></div></li>
+            <li><div><span class="r-name">方只 · 侧分改发</span><span class="r-sub">0.81 万票 · A 组</span></div></li>
+          </ol>
+        </div>
+        <div class="side-card">
+          <h3>近期节点</h3>
+          <ul class="timeline-mini">
+            <li><time>11-09 22:00</time>造型单项投票关闭</li>
+            <li><time>11-10 19:30</time>C 组正式出镜</li>
+            <li><time>11-10 20:00</time>程野复核结果截止</li>
+            <li><time>11-12</time>第 4 轮总榜公布</li>
+            <li><time>11-15</time>半决赛抽签</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>评分口径速查</h3>
+          <ul style="list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--text-2);">
+            <li style="padding:6px 0;border-bottom:1px dashed var(--line);">造型完成度 <strong style="color:var(--main-deep);">50</strong> 分</li>
+            <li style="padding:6px 0;border-bottom:1px dashed var(--line);">观众实时投票 <strong style="color:var(--main-deep);">35</strong> 分</li>
+            <li style="padding:6px 0;border-bottom:1px dashed var(--line);">镜头表现 <strong style="color:var(--main-deep);">15</strong> 分</li>
+            <li style="padding:6px 0;">复核时限 <strong style="color:var(--main-deep);">24</strong> 小时</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>常搜条目</h3>
+          <div class="card-tags">
+            <span>无妆出镜</span><span>气质匹配</span><span>转身跟焦</span><span>投票窗口</span><span>复核申请</span><span>补位规则</span><span>定妆照</span><span>后台花絮</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="f-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="15" fill="#b3244a"/>
+            <path d="M16 46 L32 14 L48 46 Z" fill="none" stroke="#ffd9e2" stroke-width="3.4" stroke-linejoin="round"/>
+            <circle cx="32" cy="37" r="5.2" fill="#ffd9e2"/>
+          </svg>
+          <span>极品每日大赛外围颜值在线</span>
+        </div>
+        <p>收录第 1 轮至第 4 轮外围赛共 42 场记录，条目类型含选手图鉴、造型解析、规则修订、后台花絮与评分争议，赛程日每天更新，非赛程日按投稿补充。</p>
+      </div>
+      <div>
+        <h4>赛事内容</h4>
+        <ul>
+          <li><a href="#overview">赛事概览</a></li>
+          <li><a href="#picks">选手图鉴</a></li>
+          <li><a href="#updates">赛程动态</a></li>
+          <li><a href="#timeline">赛程时间线</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>规则与解析</h4>
+        <ul>
+          <li><a href="#deep">深度解析</a></li>
+          <li><a href="#guide">观赛指南</a></li>
+          <li><a href="#faq">常见问答</a></li>
+          <li><a href="#cats">分类频道</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>互动</h4>
+        <ul>
+          <li><a href="#comments">观众评论</a></li>
+          <li><a href="#interact">投稿与互动</a></li>
+          <li><a href="#news">相关资讯</a></li>
+          <li><a href="#rec">相关推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>页面内容为示例条目，选手姓名、评分与票数仅用于展示内容结构。</span>
+      <span>最近更新：2026-11-08 · 对应条目“A 组夜航造型评分投票开放”</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"极品每日大赛外围颜值在线",
+  "description":"聚合每日大赛外围赛的选手图鉴、造型评分、场外花絮与规则修订记录。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"外围赛的“无妆出镜”到底禁什么、允许什么？","acceptedAnswer":{"@type":"Answer","text":"禁的是假睫毛、美瞳和明显修容，允许基础遮瑕与防晒。11 月 5 日的修订把遮瑕和防晒写进了允许清单，修容类产品需在后台登记，登记表列了 14 项产品类别。"}},
+    {"@type":"Question","name":"程野 8.1 分里的“气质错位”是怎么算出来的？","acceptedAnswer":{"@type":"Answer","text":"气质匹配占造型完成度 10 分，评委按曲目分类对照表打分。程野自选叙事慢板，对照表推荐低饱和纯色、垂坠面料、少装饰，亮片夹克三条都不满足，匹配分给到 4.5。"}},
+    {"@type":"Question","name":"选手对评分不满，能申请复核吗？复核查什么？","acceptedAnswer":{"@type":"Answer","text":"可以，评分公布后 24 小时内提交。复核只查程序，包括备注是否完整、条款引用是否正确、加总是否有误，不查审美判断。第 3 轮 3 人申请、1 人成功。"}},
+    {"@type":"Question","name":"观众投票的分数是怎么折算进总分的？","acceptedAnswer":{"@type":"Answer","text":"按组内排名折算，35 分满分。B 组五人，第一名拿满 35，第二名 30.8，依次递减，最后一名 17.5，中间档差值小，两头差值大。"}},
+    {"@type":"Question","name":"C 组为什么比 A、B 两组多一个人？","acceptedAnswer":{"@type":"Answer","text":"补位。上一轮有选手退赛，空出的名额在 11 月 1 日公示后补进 C 组，所以 C 组是 6 人。补位选手不参与上一轮的分数继承，从零开始计分。"}},
+    {"@type":"Question","name":"镜头表现分改成三项之后，A、B 两组的分数会重算吗？","acceptedAnswer":{"@type":"Answer","text":"不会。新口径从第 4 轮 C 组开始执行，A、B 两组按原单一口径计分，不回溯，跨组比较镜头表现分时要留意口径差异。"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var drawer = document.getElementById('drawer');
+  var mask = document.getElementById('drawerMask');
+  var burger = document.getElementById('hamburger');
+  var closeBtn = document.getElementById('drawerClose');
+
+  function openDrawer(){
+    drawer.classList.add('open');
+    mask.style.display = 'block';
+    document.body.classList.add('drawer-open');
+    burger.setAttribute('aria-expanded','true');
+    closeBtn.focus();
+  }
+  function closeDrawer(){
+    drawer.classList.remove('open');
+    mask.style.display = 'none';
+    document.body.classList.remove('drawer-open');
+    burger.setAttribute('aria-expanded','false');
+  }
+  burger.addEventListener('click', function(){
+    if(drawer.classList.contains('open')) closeDrawer(); else openDrawer();
+  });
+  closeBtn.addEventListener('click', closeDrawer);
+  mask.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeDrawer);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer();
+  });
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > window.innerHeight * 0.9){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 分类筛选
+  var filterBar = document.getElementById('filterBar');
+  var catGrid = document.getElementById('catGrid');
+  var noResult = document.getElementById('noResult');
+  if(filterBar && catGrid){
+    filterBar.addEventListener('click', function(e){
+      var btn = e.target.closest('.filter-btn');
+      if(!btn) return;
+      filterBar.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var cat = btn.getAttribute('data-cat');
+      var items = catGrid.querySelectorAll('.cat-item');
+      var shown = 0;
+      items.forEach(function(item){
+        var match = (cat === 'all') || (item.getAttribute('data-cat') === cat);
+        item.style.display = match ? '' : 'none';
+        if(match) shown++;
+      });
+      noResult.style.display = shown ? 'none' : 'block';
+    });
+  }
+
+  // 搜索（本地可见内容过滤）
+  var searchInput = document.getElementById('siteSearch');
+  var searchBtn = document.getElementById('searchBtn');
+  function doSearch(){
+    var q = (searchInput.value || '').trim().toLowerCase();
+    var sections = document.querySelectorAll('.main-col .section');
+    if(!q){
+      sections.forEach(function(s){ s.style.display = ''; });
+      noResult.style.display = 'none';
+      return;
+    }
+    var hit = 0;
+    sections.forEach(function(s){
+      if(s.id === 'cats'){ s.style.display = ''; return; }
+      var text = (s.textContent || '').toLowerCase();
+      if(text.indexOf(q) > -1){ s.style.display = ''; hit++; }
+      else { s.style.display = 'none'; }
+    });
+    if(hit === 0){
+      noResult.style.display = 'block';
+      noResult.textContent = '没有匹配“' + searchInput.value + '”的内容，试试选手名或规则名。';
+      noResult.scrollIntoView({behavior:'smooth', block:'center'});
+    } else {
+      noResult.style.display = 'none';
+    }
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){
+      document.querySelectorAll('.main-col .section').forEach(function(s){ s.style.display = ''; });
+      noResult.style.display = 'none';
+    }
+  });
+
+  // 侧栏与顶栏高亮
+  var navLinks = document.querySelectorAll('.channel-list a, .head-nav a');
+  var sectionsAll = document.querySelectorAll('main section[id]');
+  if('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id = en.target.id;
+          navLinks.forEach(function(a){
+            a.classList.toggle('active', a.getAttribute('href') === '/#' + id || a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, {rootMargin:'-120px 0px -55% 0px', threshold:0});
+    sectionsAll.forEach(function(s){ obs.observe(s); });
+  }
+})();
+</script>
+</body>
+  </html>
