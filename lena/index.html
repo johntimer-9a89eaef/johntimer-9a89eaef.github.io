@@ -1,0 +1,1462 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lena anderson 作品番号 - 作品目录与编号索引</title>
+<meta name="description" content="lena anderson 作品番号按发行年份与厂商编号整理，涵盖出道期、片商专属期与单体出演三个阶段的具体番号、共演阵容、时长与版本差异，适合按编号核对与检索作品信息的读者。">
+<meta name="keywords" content="lena anderson 作品番号">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d2b4c'/%3E%3Cpath d='M14 44V20h7l11 15 11-15h7v24h-7V31l-11 14-11-14v13z' fill='%23f2b544'/%3E%3C/svg%3E">
+<style>
+:root{
+  --main:#1d2b4c;
+  --main-light:#2f4270;
+  --main-deep:#131d33;
+  --accent:#c9922f;
+  --accent-soft:#f7ecd6;
+  --bg:#f5f4f0;
+  --panel:#ffffff;
+  --panel-alt:#faf9f5;
+  --text:#1e232b;
+  --text-2:#4d5563;
+  --text-3:#828b99;
+  --line:#e2e0d8;
+  --line-strong:#cfccc0;
+  --radius-card:12px;
+  --radius-btn:8px;
+  --radius-tag:999px;
+  --radius-banner:16px;
+  --shadow:0 1px 2px rgba(19,29,51,.06),0 4px 14px rgba(19,29,51,.05);
+  --shadow-hover:0 3px 8px rgba(19,29,51,.09),0 12px 28px rgba(19,29,51,.09);
+  --sticky-h:104px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--font);font-size:15px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+li{margin:0 0 6px}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶公告条 ---------- */
+.notice-bar{
+  background:var(--main-deep);color:#e8e6df;font-size:13px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.notice-inner{
+  max-width:1360px;margin:0 auto;padding:7px 20px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.notice-brand{
+  font-weight:700;color:var(--accent);letter-spacing:.4px;white-space:nowrap;
+}
+.notice-list{
+  display:flex;gap:18px;flex-wrap:wrap;list-style:none;margin:0;padding:0;
+  overflow:hidden;
+}
+.notice-list li{display:flex;gap:7px;align-items:baseline;margin:0;white-space:nowrap}
+.notice-list time{color:#9aa6bd;font-variant-numeric:tabular-nums}
+.notice-list .dot{color:var(--accent)}
+
+/* ---------- 页头 ---------- */
+.site-header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(29,43,76,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.1);
+  color:#f3f2ec;
+}
+.header-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:22px;min-height:60px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:34px;height:34px;display:block}
+.brand-text{font-size:17px;font-weight:700;letter-spacing:.3px;color:#fff}
+.brand-text span{color:var(--accent)}
+.main-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.main-nav a{
+  padding:6px 11px;border-radius:var(--radius-btn);font-size:14px;color:#d6d9e2;
+  transition:background .18s,color .18s;
+}
+.main-nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+.header-tools{display:flex;align-items:center;gap:10px}
+.search-box{position:relative}
+.search-box input{
+  width:190px;padding:7px 12px;border-radius:var(--radius-btn);
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.09);color:#fff;font-size:13px;
+}
+.search-box input::placeholder{color:#a8b0c3}
+.search-box input:focus{outline:2px solid var(--accent);background:rgba(255,255,255,.14)}
+.search-result{
+  position:absolute;top:calc(100% + 6px);right:0;width:280px;
+  background:#fff;color:var(--text);border-radius:var(--radius-card);
+  box-shadow:var(--shadow-hover);padding:10px 12px;font-size:13px;
+  display:none;max-height:280px;overflow:auto;
+}
+.search-result.show{display:block}
+.search-result b{color:var(--main)}
+.search-result .no-hit{color:var(--text-3)}
+.hamburger{
+  display:none;background:none;border:1px solid rgba(255,255,255,.28);
+  border-radius:var(--radius-btn);color:#fff;padding:6px 10px;font-size:13px;
+}
+.mobile-nav{
+  display:none;position:fixed;inset:var(--sticky-h) 0 auto 0;z-index:55;
+  background:var(--main);color:#fff;padding:10px 20px 18px;
+  box-shadow:var(--shadow-hover);
+}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:10px 4px;border-bottom:1px solid rgba(255,255,255,.1);font-size:15px}
+.overlay{
+  display:none;position:fixed;inset:0;background:rgba(10,14,22,.5);z-index:50;
+}
+.overlay.show{display:block}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(201,146,47,.22), transparent 46%),
+    linear-gradient(160deg,#1d2b4c 0%,#243koš 0%,#223055 52%,#131d33 100%);
+  color:#f4f3ed;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto -8% -46% 42%;
+  height:360px;border-radius:50%;
+  background:radial-gradient(circle, rgba(201,146,47,.16), transparent 68%);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:1360px;margin:0 auto;padding:52px 20px 56px;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:44px;align-items:center;position:relative;z-index:1;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--accent);border:1px solid rgba(201,146,47,.45);
+  padding:4px 12px;border-radius:var(--radius-tag);margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(28px,4.2vw,44px);letter-spacing:.5px;color:#fff;
+  margin-bottom:16px;word-break:break-word;
+}
+.hero-desc{
+  font-size:15px;color:#c9cede;max-width:560px;margin-bottom:26px;
+}
+.hero-desc strong{color:var(--accent);font-weight:600}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:10px 20px;border-radius:var(--radius-btn);
+  font-size:14px;font-weight:600;border:1px solid transparent;
+  transition:transform .16s,box-shadow .16s,background .16s;
+}
+.btn-primary{background:var(--accent);color:#1b1405}
+.btn-primary:hover{background:#dcA445;transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.34);color:#f0efe9}
+.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.hero-visual{position:relative}
+.hero-card{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:var(--radius-banner);
+  padding:18px;backdrop-filter:blur(4px);
+}
+.hero-card h2{
+  font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.6px;margin-bottom:12px;
+}
+.code-rows{display:grid;gap:8px}
+.code-row{
+  display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  font-size:13px;padding:7px 10px;border-radius:6px;
+  background:rgba(255,255,255,.05);
+}
+.code-row code{
+  font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;
+  color:#ffd98a;letter-spacing:.4px;
+}
+.code-row span{color:#b8bfd1;font-size:12px}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;
+}
+.hero-stat{
+  text-align:center;padding:10px 4px;border-radius:8px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+}
+.hero-stat b{display:block;font-size:19px;color:#fff}
+.hero-stat small{font-size:11px;color:#a8b0c3;letter-spacing:.4px}
+
+/* ---------- 布局 ---------- */
+.layout{
+  max-width:1360px;margin:0 auto;padding:34px 20px 10px;
+  display:grid;grid-template-columns:200px minmax(0,1fr) 280px;
+  gap:30px;align-items:start;
+}
+.channel-col{position:sticky;top:calc(var(--sticky-h) + 14px)}
+.channel-box{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius-card);padding:14px 12px;box-shadow:var(--shadow);
+}
+.channel-box h2{
+  font-size:12px;letter-spacing:1.4px;color:var(--text-3);
+  text-transform:uppercase;padding:0 6px 10px;font-weight:700;
+}
+.channel-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.channel-list a{
+  display:flex;justify-content:space-between;align-items:center;gap:6px;
+  padding:8px 10px;border-radius:6px;font-size:13.5px;color:var(--text-2);
+  transition:background .15s,color .15s;
+}
+.channel-list a:hover{background:var(--panel-alt);color:var(--main)}
+.channel-list a.active{background:var(--accent-soft);color:var(--main-deep);font-weight:600}
+.channel-list em{
+  font-style:normal;font-size:11px;color:var(--text-3);
+  font-variant-numeric:tabular-nums;
+}
+.aside-col{position:sticky;top:calc(var(--sticky-h) + 14px);display:grid;gap:20px}
+.aside-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:16px;box-shadow:var(--shadow);
+}
+.aside-card h2{
+  font-size:14px;margin-bottom:12px;padding-bottom:9px;
+  border-bottom:1px solid var(--line);color:var(--main);
+}
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rk}
+.rank-list li{
+  counter-increment:rk;display:flex;gap:10px;margin:0 0 11px;font-size:13px;
+  line-height:1.55;
+}
+.rank-list li::before{
+  content:counter(rk);flex-shrink:0;width:20px;height:20px;border-radius:5px;
+  background:var(--panel-alt);border:1px solid var(--line);
+  display:grid;place-items:center;font-size:11px;color:var(--text-2);
+  font-variant-numeric:tabular-nums;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--accent);border-color:var(--accent);color:#1b1405;font-weight:700}
+.rank-list a:hover{color:var(--main);text-decoration:underline}
+.rank-list small{display:block;color:var(--text-3);font-size:11.5px}
+.update-list{list-style:none;margin:0;padding:0;font-size:13px}
+.update-list li{padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px;justify-content:space-between;align-items:baseline;margin:0}
+.update-list li:last-child{border-bottom:0}
+.update-list time{color:var(--text-3);font-size:11.5px;flex-shrink:0;font-variant-numeric:tabular-nums}
+
+/* ---------- 主内容板块 ---------- */
+.content-col{min-width:0;display:grid;gap:38px}
+.section{scroll-margin-top:var(--sticky-h)}
+.section-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:14px;
+  margin-bottom:16px;flex-wrap:wrap;
+}
+.section-head h2{
+  font-size:20px;color:var(--main-deep);position:relative;padding-left:14px;
+}
+.section-head h2::before{
+  content:"";position:absolute;left:0;top:5px;bottom:5px;width:4px;
+  border-radius:2px;background:var(--accent);
+}
+.section-head .sub{font-size:13px;color:var(--text-3)}
+.lead-text{font-size:15px;color:var(--text-2)}
+.lead-text p{margin-bottom:13px}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.card-thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--panel-alt)}
+.card-thumb img{width:100%;height:100%;object-fit:cover}
+.card-thumb .type{
+  position:absolute;left:8px;top:8px;font-size:11px;padding:2px 8px;
+  border-radius:var(--radius-tag);background:rgba(19,29,51,.82);color:#f7ecd6;
+  letter-spacing:.3px;
+}
+.card-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:14.5px;color:var(--main-deep);line-height:1.5}
+.card-code{
+  font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;
+  font-size:12px;color:var(--accent);background:var(--accent-soft);
+  padding:1px 6px;border-radius:4px;display:inline-block;
+}
+.card-body p{font-size:13px;color:var(--text-2);margin:0;flex:1}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap}
+.tag{
+  font-size:11.5px;padding:1px 8px;border-radius:var(--radius-tag);
+  background:var(--panel-alt);border:1px solid var(--line);color:var(--text-2);
+  white-space:nowrap;
+}
+.card-meta{
+  display:flex;justify-content:space-between;font-size:11.5px;color:var(--text-3);
+  padding-top:8px;border-top:1px solid var(--line);
+}
+.card-meta b{color:var(--main);font-variant-numeric:tabular-nums}
+
+/* 紧凑列表 */
+.list-rows{display:grid;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden}
+.row-item{
+  display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:14px;
+  padding:12px 16px;align-items:baseline;border-bottom:1px solid var(--line);
+  transition:background .15s;
+}
+.row-item:last-child{border-bottom:0}
+.row-item:hover{background:var(--panel-alt)}
+.row-item .code{
+  font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;
+  font-size:12px;color:var(--accent);letter-spacing:.3px;
+}
+.row-item h3{font-size:14px;color:var(--main-deep);margin-bottom:2px}
+.row-item p{font-size:13px;color:var(--text-2);margin:0}
+.row-item time{font-size:11.5px;color:var(--text-3);white-space:nowrap}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.cat-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:14px 14px 12px;display:flex;flex-direction:column;gap:5px;
+  transition:border-color .16s,transform .16s,box-shadow .16s;
+}
+.cat-item:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.cat-item strong{font-size:14px;color:var(--main-deep)}
+.cat-item span{font-size:12px;color:var(--text-3);line-height:1.55}
+.cat-item em{
+  font-style:normal;font-size:11.5px;color:var(--accent);
+  font-variant-numeric:tabular-nums;
+}
+
+/* 深度解析 */
+.article-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:26px 28px;box-shadow:var(--shadow);
+}
+.article-box h3{
+  font-size:16.5px;color:var(--main-deep);margin:24px 0 10px;
+  padding-left:11px;border-left:3px solid var(--accent);
+}
+.article-box h3:first-child{margin-top:0}
+.article-box p{font-size:14.5px;color:var(--text-2)}
+.article-box ul li{font-size:14px;color:var(--text-2)}
+.check-table{width:100%;border-collapse:collapse;font-size:13px;margin:14px 0 6px}
+.check-table th,.check-table td{
+  border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;
+}
+.check-table th{background:var(--panel-alt);font-weight:600;color:var(--main-deep)}
+.check-table td{color:var(--text-2)}
+.quote-note{
+  border-left:3px solid var(--accent);background:var(--accent-soft);
+  padding:10px 14px;border-radius:0 var(--radius-btn) var(--radius-btn) 0;
+  font-size:13.5px;color:#5b4a22;margin:14px 0;
+}
+
+/* 体验指南步骤 */
+.steps{display:grid;gap:14px;counter-reset:st}
+.step{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:16px 18px 14px 54px;position:relative;
+}
+.step::before{
+  counter-increment:st;content:counter(st);
+  position:absolute;left:16px;top:16px;width:26px;height:26px;border-radius:50%;
+  background:var(--main);color:#fff;display:grid;place-items:center;
+  font-size:13px;font-weight:700;
+}
+.step h3{font-size:14.5px;color:var(--main-deep);margin-bottom:6px}
+.step p{font-size:13.5px;color:var(--text-2);margin:0}
+
+/* FAQ */
+.faq-list{display:grid;gap:10px}
+details{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius-card);padding:0;overflow:hidden;
+}
+details[open]{border-color:var(--accent)}
+summary{
+  padding:13px 16px;font-size:14.5px;font-weight:600;color:var(--main-deep);
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;
+  gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:18px;font-weight:400;line-height:1}
+details[open] summary::after{content:"–"}
+details .faq-body{padding:0 16px 14px;font-size:13.8px;color:var(--text-2)}
+details .faq-body p{margin:0 0 8px}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.comment{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:13px 15px;display:flex;flex-direction:column;gap:6px;
+}
+.comment-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.comment-head b{font-size:13px;color:var(--main-deep)}
+.comment-head time{font-size:11px;color:var(--text-3);font-variant-numeric:tabular-nums}
+.comment p{font-size:13.3px;color:var(--text-2);margin:0}
+.comment .ref{font-size:11.5px;color:var(--accent)}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.news-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:16px 18px;display:flex;flex-direction:column;gap:8px;
+}
+.news-item h3{font-size:14.5px;color:var(--main-deep);line-height:1.5}
+.news-item time{font-size:11.5px;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:.3px}
+.news-item p{font-size:13.3px;color:var(--text-2);margin:0}
+
+/* 相关推荐标签索引 */
+.reco-wrap{display:flex;flex-wrap:wrap;gap:9px}
+.reco-tag{
+  font-size:13px;padding:6px 13px;border-radius:var(--radius-tag);
+  background:var(--panel);border:1px solid var(--line-strong);color:var(--text-2);
+  transition:border-color .16s,color .16s,background .16s;
+}
+.reco-tag:hover{border-color:var(--main);color:var(--main);background:var(--accent-soft)}
+.reco-tag em{font-style:normal;color:var(--text-3);font-size:11.5px;margin-left:4px}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px;display:grid;gap:16px}
+.timeline::before{
+  content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line-strong);
+}
+.tl-item{position:relative}
+.tl-item::before{
+  content:"";position:absolute;left:-21px;top:7px;width:10px;height:10px;
+  border-radius:50%;background:var(--panel);border:2px solid var(--accent);
+}
+.tl-item time{font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums;font-weight:600}
+.tl-item h3{font-size:14px;color:var(--main-deep);margin:2px 0 3px}
+.tl-item p{font-size:13px;color:var(--text-2);margin:0}
+
+/* 投稿互动 */
+.submit-panel{
+  background:linear-gradient(140deg,#1d2b4c,#2f4270);
+  color:#eef0f6;border-radius:var(--radius-banner);padding:26px 28px;
+  display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);
+  gap:26px;align-items:center;
+}
+.submit-panel h2{font-size:19px;margin-bottom:10px;color:#fff}
+.submit-panel p{font-size:13.5px;color:#c3cade;margin-bottom:14px}
+.submit-fields{display:flex;gap:9px;flex-wrap:wrap}
+.submit-fields input,.submit-fields select{
+  padding:8px 11px;border-radius:var(--radius-btn);border:1px solid rgba(255,255,255,.24);
+  background:rgba(255,255,255,.1);color:#fff;font-size:13px;font-family:inherit;
+}
+.submit-fields input::placeholder{color:#a9b2c7}
+.submit-fields input{flex:1;min-width:150px}
+.submit-note{font-size:12px;color:#a9b2c7}
+.submit-stat{display:grid;gap:10px;text-align:center}
+.submit-stat div{background:rgba(255,255,255,.08);border-radius:10px;padding:10px}
+.submit-stat b{display:block;font-size:20px;color:var(--accent)}
+.submit-stat small{font-size:11.5px;color:#b7bfd2}
+
+/* 页尾 */
+.site-footer{
+  margin-top:44px;background:var(--main-deep);color:#b9c0d0;font-size:13px;
+  border-top:3px solid var(--accent);
+}
+.footer-inner{
+  max-width:1360px;margin:0 auto;padding:38px 20px 22px;
+  display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,.9fr));
+  gap:30px;
+}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand svg{width:30px;height:30px}
+.footer-brand b{color:#fff;font-size:16px}
+.footer-desc{font-size:12.8px;line-height:1.8;color:#9aa4b8;max-width:360px}
+.footer-col h3{font-size:13px;color:#fff;margin-bottom:10px;letter-spacing:.5px}
+.footer-col ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.footer-col a{font-size:12.8px;color:#9aa4b8}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{
+  max-width:1360px;margin:0 auto;padding:14px 20px 24px;
+  border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:#7f8a9f;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:22px;bottom:26px;z-index:70;
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line-strong);
+  background:#fff;color:var(--main);font-size:17px;box-shadow:var(--shadow);
+  display:grid;place-items:center;opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .2s;
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+
+/* 筛选 */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.filter-btn{
+  font-size:12.5px;padding:5px 13px;border-radius:var(--radius-tag);
+  border:1px solid var(--line-strong);background:var(--panel);color:var(--text-2);
+  transition:all .15s;
+}
+.filter-btn:hover{border-color:var(--main);color:var(--main)}
+.filter-btn.active{background:var(--main);border-color:var(--main);color:#fff}
+
+/* 响应式 */
+@media (max-width:1180px){
+  .layout{grid-template-columns:180px minmax(0,1fr) 250px;gap:22px}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 270px;gap:24px}
+  .channel-col{display:none}
+  .hero-inner{grid-template-columns:1fr;gap:30px;padding:40px 20px 46px}
+  .main-nav{display:none}
+  .hamburger{display:inline-block}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:24px}
+  .submit-panel{grid-template-columns:1fr}
+}
+@media (max-width:740px){
+  :root{--sticky-h:96px}
+  .layout{grid-template-columns:1fr;padding:22px 14px 6px}
+  .aside-col{position:static}
+  .header-inner{gap:12px;min-height:54px}
+  .search-box input{width:130px}
+  .notice-list{gap:10px;font-size:12px}
+  .notice-list li:nth-child(n+3){display:none}
+  .hero-inner{padding:32px 16px 38px}
+  .card-grid{grid-template-columns:1fr}
+  .row-item{grid-template-columns:1fr;gap:4px}
+  .row-item time{justify-self:start}
+  .article-box{padding:20px 18px}
+  .footer-inner{grid-template-columns:1fr;gap:22px;padding:28px 16px 18px}
+  .hero-stats{grid-template-columns:repeat(3,1fr)}
+  .to-top{right:14px;bottom:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar">
+  <div class="notice-inner">
+    <span class="notice-brand">lena anderson 作品番号</span>
+    <ul class="notice-list">
+      <li><time datetime="2026-11-08">11月8日</time><span class="dot">·</span>更新 LA-2024-017 至 LA-2024-021 共 5 条番号记录</li>
+      <li><time datetime="2026-11-06">11月6日</time><span class="dot">·</span>补录厂商专属期 12 条旧番号与发行版本差异</li>
+      <li><time datetime="2026-11-03">11月3日</time><span class="dot">·</span>共演阵容索引新增 9 位共演者条目</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/#top" aria-label="lena anderson 作品番号 首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#f2b544"/>
+        <path d="M14 44V20h7l11 15 11-15h7v24h-7V31L32 45 21 31v13z" fill="#1d2b4c"/>
+      </svg>
+      <span class="brand-text">lena anderson <span>作品番号</span></span>
+    </a>
+    <nav class="main-nav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#featured">精选条目</a>
+      <a href="/#updates">番号动态</a>
+      <a href="/#categories">分类入口</a>
+      <a href="/#deepdive">深度解析</a>
+      <a href="/#guide">观看路径</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">观众评论</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input id="siteSearch" type="search" placeholder="搜索番号或片名" aria-label="搜索番号或片名">
+        <div class="search-result" id="searchResult" role="status" aria-live="polite"></div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobileNav">菜单</button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="移动端导航">
+  <a href="/#overview">领域概览</a>
+  <a href="/#featured">精选条目</a>
+  <a href="/#updates">番号动态</a>
+  <a href="/#categories">分类入口</a>
+  <a href="/#deepdive">深度解析</a>
+  <a href="/#guide">观看路径</a>
+  <a href="/#faq">常见问题</a>
+  <a href="/#comments">观众评论</a>
+  <a href="/#news">相关资讯</a>
+  <a href="/#submit">投稿补充</a>
+</nav>
+<div class="overlay" id="overlay"></div>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-kicker">Works Index · 番号目录</span>
+      <h1>lena anderson 作品番号</h1>
+      <p class="hero-desc">按发行年份、厂商前缀与单体出演三条线索整理的番号目录。每条记录给出<strong>完整番号、共演阵容、片长与版本差异</strong>，方便对照碟面信息核对，也方便比较同一厂商不同年份的编号规则变化。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">查看精选条目</a>
+        <a class="btn btn-ghost" href="/#deepdive">读编号规则解析</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <h2>编号格式速览</h2>
+        <div class="code-rows">
+          <div class="code-row"><code>LA-2021-004</code><span>厂商专属期</span></div>
+          <div class="code-row"><code>LA-2023-011</code><span>共演单元</span></div>
+          <div class="code-row"><code>LA-2024-021</code><span>单体出演</span></div>
+          <div class="code-row"><code>LA-BOX-03</code><span>合集套装</span></div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>86</b><small>收录番号</small></div>
+          <div class="hero-stat"><b>3</b><small>发行阶段</small></div>
+          <div class="hero-stat"><b>11/08</b><small>最近更新</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主布局 -->
+<div class="layout">
+
+  <!-- 左频道栏 -->
+  <aside class="channel-col">
+    <div class="channel-box">
+      <h2>频道索引</h2>
+      <ul class="channel-list" id="channelList">
+        <li><a href="/#overview">领域概览<em>01</em></a></li>
+        <li><a href="/#featured">精选条目<em>02</em></a></li>
+        <li><a href="/#updates">番号动态<em>03</em></a></li>
+        <li><a href="/#categories">分类入口<em>04</em></a></li>
+        <li><a href="/#deepdive">编号解析<em>05</em></a></li>
+        <li><a href="/#guide">观看路径<em>06</em></a></li>
+        <li><a href="/#faq">常见问题<em>07</em></a></li>
+        <li><a href="/#comments">观众评论<em>08</em></a></li>
+        <li><a href="/#news">相关资讯<em>09</em></a></li>
+        <li><a href="/#reco">相关推荐<em>10</em></a></li>
+        <li><a href="/#timeline">发行时间线<em>11</em></a></li>
+        <li><a href="/#submit">投稿补充<em>12</em></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main class="content-col">
+
+    <!-- 01 领域概览 -->
+    <section class="section" id="overview">
+      <div class="section-head">
+        <h2>番号体系与发行阶段概览</h2>
+        <span class="sub">截至 2026-11-08</span>
+      </div>
+      <div class="lead-text">
+        <p>围绕 lena anderson 的作品，市面流通的编号大致分三类：厂商专属期编号、单体出演编号、合集套装编号。厂商专属期以 LA 前缀加年份加三位流水号构成，例如 LA-2021-004，碟面右下角通常印有同号条形码；单体出演编号则常把厂商缩写放在年份之前，格式上更零散，同一部作品在不同地区发行时会出现两个编号并行的情况。</p>
+        <p>2020 年至 2022 年是编号最规整的阶段，共 34 条记录，流水号连续无跳号。2023 年起共演单元增多，编号开始出现 A、B 分卷，LA-2023-011A 与 LA-2023-011B 属同一发行单元但片长不同。2024 年下半年后合集套装改用 BOX 标识，LA-BOX-03 把 2021 年三部单体作品重新压制成双碟，附赠一段 18 分钟的幕后花絮。</p>
+        <p>目前值得核对的点集中在三处：一是 2022 年有两条编号在厂商官网与经销商目录中不一致；二是共演单元的分卷编号是否算独立条目，各家数据库处理方式不同；三是合集套装里的重制片段时长与原版存在 40 秒左右出入。下面各板块分别按条目、进度、规则与判断方法展开。</p>
+      </div>
+    </section>
+
+    <!-- 02 精选内容推荐 -->
+    <section class="section" id="featured">
+      <div class="section-head">
+        <h2>精选番号条目</h2>
+        <span class="sub">按碟面信息核对整理</span>
+      </div>
+      <div class="filter-bar" role="group" aria-label="按发行阶段筛选">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="exclusive">厂商专属期</button>
+        <button class="filter-btn" data-filter="solo">单体出演</button>
+        <button class="filter-btn" data-filter="box">合集套装</button>
+      </div>
+      <div class="card-grid" id="featuredGrid">
+        <article class="card" data-type="exclusive">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2021004/400/300" width="400" height="300" loading="lazy" alt="LA-2021-004 碟面封面，深色背景与侧光人像构图">
+            <span class="type">厂商专属期</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2021-004 <span class="card-code">2021</span></h3>
+            <p>专属期第四部单体作品，片长 118 分钟，碟面附 12 页写真册。编号连续无跳号，是判断 2021 年流水线完整性的基准条目。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">写真册附赠</span><span class="tag">118分钟</span></div>
+            <div class="card-meta"><span>评分 <b>8.4</b></span><span>碟面核对 <b>一致</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="exclusive">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2022017/400/300" width="400" height="300" loading="lazy" alt="LA-2022-017 包装外盒，双碟装与银色烫印编号">
+            <span class="type">厂商专属期</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2022-017 <span class="card-code">2022</span></h3>
+            <p>双碟装，正片 132 分钟加花絮 26 分钟。官网与经销商目录对这条编号的年份归属存在分歧，是核对练习的典型样本。</p>
+            <div class="tag-row"><span class="tag">双碟</span><span class="tag">花絮26分钟</span><span class="tag">编号争议</span></div>
+            <div class="card-meta"><span>评分 <b>8.1</b></span><span>碟面核对 <b>待确认</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="solo">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2023011a/400/300" width="400" height="300" loading="lazy" alt="LA-2023-011A 分卷封面，双人共演构图">
+            <span class="type">单体出演</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2023-011A <span class="card-code">2023</span></h3>
+            <p>共演单元 A 卷，片长 96 分钟，与 B 卷共享同一场景设定但叙事线独立。分卷编号是否算独立条目，各数据库处理不同。</p>
+            <div class="tag-row"><span class="tag">共演</span><span class="tag">分卷A</span><span class="tag">96分钟</span></div>
+            <div class="card-meta"><span>评分 <b>7.9</b></span><span>共演 <b>2人</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="solo">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2023011b/400/300" width="400" height="300" loading="lazy" alt="LA-2023-011B 分卷封面，室内场景与暖色灯光">
+            <span class="type">单体出演</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2023-011B <span class="card-code">2023</span></h3>
+            <p>B 卷片长 104 分钟，比 A 卷多出 8 分钟结尾段落。两卷封面编号印刷位置相同，仅末位字母区分，容易在扫描时混淆。</p>
+            <div class="tag-row"><span class="tag">共演</span><span class="tag">分卷B</span><span class="tag">104分钟</span></div>
+            <div class="card-meta"><span>评分 <b>8.0</b></span><span>共演 <b>2人</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="solo">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2024017/400/300" width="400" height="300" loading="lazy" alt="LA-2024-017 单体出演封面，冷色调户外取景">
+            <span class="type">单体出演</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2024-017 <span class="card-code">2024</span></h3>
+            <p>2024 年单体出演第 17 条，片长 109 分钟，户外取景占比过半。编号首次采用新字体印刷，与 2023 年批次肉眼可辨。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">户外取景</span><span class="tag">109分钟</span></div>
+            <div class="card-meta"><span>评分 <b>8.3</b></span><span>碟面核对 <b>一致</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="box">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/labox03/400/300" width="400" height="300" loading="lazy" alt="LA-BOX-03 合集套装外盒，双碟厚盒与烫金编号">
+            <span class="type">合集套装</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-BOX-03 <span class="card-code">BOX</span></h3>
+            <p>把 2021 年三部单体作品压成双碟，附 18 分钟幕后花絮。重制片段与原版存在约 40 秒时长差，是版本比对的重点对象。</p>
+            <div class="tag-row"><span class="tag">合集</span><span class="tag">双碟</span><span class="tag">幕后花絮</span></div>
+            <div class="card-meta"><span>评分 <b>8.6</b></span><span>含 <b>3部</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="exclusive">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2022009/400/300" width="400" height="300" loading="lazy" alt="LA-2022-009 封面，室内布景与低饱和色调">
+            <span class="type">厂商专属期</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2022-009 <span class="card-code">2022</span></h3>
+            <p>2022 年上半年流水号第 9 条，片长 121 分钟。碟面编号与塑封贴纸编号一致，可用作判断该批次是否原封的参照。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">原封参照</span><span class="tag">121分钟</span></div>
+            <div class="card-meta"><span>评分 <b>8.2</b></span><span>碟面核对 <b>一致</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="solo">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2024021/400/300" width="400" height="300" loading="lazy" alt="LA-2024-021 封面，近景人像与浅景深处理">
+            <span class="type">单体出演</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2024-021 <span class="card-code">2024</span></h3>
+            <p>11 月 8 日刚补录的第 21 条，片长 113 分钟。发行方在预告页标注了「完结篇」字样，但未说明是否为阶段收尾。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">新补录</span><span class="tag">113分钟</span></div>
+            <div class="card-meta"><span>评分 <b>7.8</b></span><span>更新 <b>11-08</b></span></div>
+          </div>
+        </article>
+        <article class="card" data-type="exclusive">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/la2021012/400/300" width="400" height="300" loading="lazy" alt="LA-2021-012 封面，深蓝背景与正面构图">
+            <span class="type">厂商专属期</span>
+          </div>
+          <div class="card-body">
+            <h3>LA-2021-012 <span class="card-code">2021</span></h3>
+            <p>专属期第 12 条，片长 126 分钟，是 2021 年片长最长的一条。碟面右下角条形码与编号尾数对应关系在此条首次启用。</p>
+            <div class="tag-row"><span class="tag">单体</span><span class="tag">最长片长</span><span class="tag">126分钟</span></div>
+            <div class="card-meta"><span>评分 <b>8.5</b></span><span>碟面核对 <b>一致</b></span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 最新更新 / 动态 -->
+    <section class="section" id="updates">
+      <div class="section-head">
+        <h2>番号补录与版本动态</h2>
+        <span class="sub">2026 年 10 月下旬至 11 月 8 日</span>
+      </div>
+      <div class="list-rows">
+        <div class="row-item">
+          <span class="code">LA-2024-021</span>
+          <div><h3>补录第 21 条单体出演</h3><p>片长 113 分钟，预告页标注「完结篇」，发行方未同步说明后续是否停更。</p></div>
+          <time datetime="2026-11-08">11-08</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2024-020</span>
+          <div><h3>碟面编号字体换版</h3><p>与第 17 条起的新字体一致，旧字体批次在二手市场仍有流通，需按字体区分。</p></div>
+          <time datetime="2026-11-07">11-07</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2023-011A/B</span>
+          <div><h3>分卷编号合并讨论</h3><p>两家数据库仍将 A、B 卷分开收录，第三家已合并为单条并注明双版本。</p></div>
+          <time datetime="2026-11-06">11-06</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-BOX-03</span>
+          <div><h3>重制片段时长复核</h3><p>幕后花絮实测 18 分 12 秒，与包装标注的 18 分钟有 12 秒偏差。</p></div>
+          <time datetime="2026-11-05">11-05</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2022-017</span>
+          <div><h3>年份归属分歧未解</h3><p>官网目录归 2022 年，经销商年度清单归 2023 年，两方均未发布更正说明。</p></div>
+          <time datetime="2026-11-04">11-04</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2021-004</span>
+          <div><h3>写真册页数核实</h3><p>实物清点 12 页，早期目录写 16 页，差异来自是否计入封面封底。</p></div>
+          <time datetime="2026-11-02">11-02</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2022-009</span>
+          <div><h3>原封贴纸编号对照</h3><p>贴纸编号与碟面编号尾数一致，可作为判断未拆封的辅助依据之一。</p></div>
+          <time datetime="2026-10-30">10-30</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2021-012</span>
+          <div><h3>条形码对应规则确认</h3><p>尾数与条形码末三位对应，该规则自 2021 年第 12 条起启用并延续至 2022 年。</p></div>
+          <time datetime="2026-10-27">10-27</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2024-017</span>
+          <div><h3>户外取景比例记录</h3><p>户外场景约 58 分钟，占全片 53%，是 2024 年批次中占比最高的一条。</p></div>
+          <time datetime="2026-10-24">10-24</time>
+        </div>
+        <div class="row-item">
+          <span class="code">LA-2023-011B</span>
+          <div><h3>结尾段落差异说明</h3><p>多出的 8 分钟为独立收尾场景，未在 A 卷出现，两卷不可互相替代。</p></div>
+          <time datetime="2026-10-21">10-21</time>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 分类入口 -->
+    <section class="section" id="categories">
+      <div class="section-head">
+        <h2>按类型与阶段分类</h2>
+        <span class="sub">8 个入口</span>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#featured"><strong>厂商专属期编号</strong><span>LA 前缀加年份加流水号，2020—2022 年共 34 条</span><em>34 条记录</em></a>
+        <a class="cat-item" href="/#featured"><strong>单体出演番号</strong><span>2023 年后为主，含分卷与独立收尾段落</span><em>29 条记录</em></a>
+        <a class="cat-item" href="/#featured"><strong>共演单元分卷</strong><span>A/B 卷共享场景设定，片长与结尾段落不同</span><em>9 组</em></a>
+        <a class="cat-item" href="/#featured"><strong>合集套装 BOX</strong><span>旧作重制加幕后花絮，含时长偏差需比对</span><em>3 套</em></a>
+        <a class="cat-item" href="/#updates"><strong>碟面版本差异</strong><span>字体换版、贴纸编号、条形码尾数对应规则</span><em>11 项</em></a>
+        <a class="cat-item" href="/#deepdive"><strong>编号规则解析</strong><span>流水号连续性、分卷处理、年份归属争议</span><em>5 节</em></a>
+        <a class="cat-item" href="/#guide"><strong>版本比对路径</strong><span>先看时长与碟数，再核贴纸与条形码</span><em>4 步</em></a>
+        <a class="cat-item" href="/#timeline"><strong>发行时间线</strong><span>2020 年至 2026 年关键节点与批次变化</span><em>12 节点</em></a>
+      </div>
+    </section>
+
+    <!-- 05 深度解析 -->
+    <section class="section" id="deepdive">
+      <div class="section-head">
+        <h2>编号规则与版本判断解析</h2>
+        <span class="sub">深度阅读</span>
+      </div>
+      <div class="article-box">
+        <h3>流水号连续性能说明什么</h3>
+        <p>2020 年到 2022 年的 34 条专属期编号流水号连续，没有跳号。这条连续性本身有信息量：它说明该阶段厂商按固定节奏发行，编号即发行顺序，遇到跳号就应怀疑是否漏收或存在未公开条目。2021 年第 4 条与第 12 条之间没有缺号，但第 7 条的片长记录在两个数据库里分别是 98 分钟和 112 分钟，差 14 分钟——这属于记录层面的分歧，不能反推编号有问题。</p>
+        <p>跳到 2023 年，流水号在中段出现过一次跳号，011 之后直接到 013。013 在包装上标注为「特别篇」，未进入常规流水线。判断跳号性质时，先看跳号位置是否有独立命名的条目，再看该条目是否出现在厂商年度清单里。两条都满足，跳号属于计划内；只满足一条，就要留一个问号。</p>
+
+        <h3>分卷编号算一条还是两条</h3>
+        <p>LA-2023-011A 与 LA-2023-011B 是同一发行单元的两个分卷。A 卷 96 分钟，B 卷 104 分钟，B 卷多出的 8 分钟是独立收尾场景，A 卷没有对应内容。三家数据库的处理方式如下：</p>
+        <table class="check-table">
+          <thead><tr><th>数据库</th><th>收录方式</th><th>条目数</th><th>可核对依据</th></tr></thead>
+          <tbody>
+            <tr><td>甲库</td><td>A、B 分列</td><td>2</td><td>按碟面编号逐个录入</td></tr>
+            <tr><td>乙库</td><td>A、B 分列，互加关联</td><td>2</td><td>碟面编号加共演阵容交叉引用</td></tr>
+            <tr><td>丙库</td><td>合并为单条，注明双版本</td><td>1</td><td>按发行单元归并，片长取 B 卷</td></tr>
+          </tbody>
+        </table>
+        <p>三种做法都能自圆其说，差别在于检索目的。要查「某位共演者出现在哪些作品里」，合并收录更省事；要核对实物碟数，分列更准确。争议点不在谁对谁错，而在使用场景。若拿丙库的条目数去和实体碟数量对账，必然差一条。</p>
+
+        <h3>年份归属争议的拆解</h3>
+        <p>LA-2022-017 的年份归属是目前最明确的一处分歧。厂商官网目录把它列在 2022 年第四季度，经销商 2023 年度清单把它算作 2023 年首批。两边都没有发布更正说明。可核对的事实有三项：包装印刷日期为 2022 年 11 月；碟面编号含 2022 字样；首次上架时间为 2023 年 1 月 6 日。前两项支持 2022 年，第三项支持 2023 年。</p>
+        <div class="quote-note">把「发行年份」拆成印刷年份、编号年份、上架年份三个字段分别记录，分歧就不再是需要裁决的问题，而是三条可并存的信息。</div>
+        <p>这个处理方式同样适用于另外两条有类似情况的编号。区分「已公开事实」（包装印刷日期）、「厂商口径」（官网目录归类）、「渠道口径」（经销商清单归类），三者并列，比强行统一更接近实物状态。</p>
+
+        <h3>合集套装的时长偏差从哪来</h3>
+        <p>LA-BOX-03 把 2021 年三部单体作品压成双碟，包装标注幕后花絮 18 分钟，实测 18 分 12 秒。重制正片与原版相比，单部作品约短 40 秒。偏差来源可以拆成三个环节核对：</p>
+        <ul>
+          <li>片头厂标：原版保留完整厂标约 12 秒，重制版压缩为 4 秒，差 8 秒。</li>
+          <li>章节过渡：重制版去掉两处黑场过渡，合计约 20 秒。</li>
+          <li>片尾字幕：重制版字幕滚动速度加快，约省 12 秒。</li>
+        </ul>
+        <p>三项相加接近 40 秒，与实测差值吻合。这说明偏差不是内容删减，而是包装层面的压缩。判断合集是否「少了内容」，应逐段比对而非只看总时长；只看总时长会把片头片尾的压缩误判为场景缺失。</p>
+
+        <h3>碟面核对的可操作顺序</h3>
+        <p>拿到一张碟，先看碟面编号与包装编号是否一致，再看塑封贴纸编号尾数是否与碟面编号尾数对应。2021 年第 12 条起启用的条形码末三位对应规则，可作为第三道核对。三道都对上，基本可排除错配；有一道对不上，先查是否为不同批次印刷，再考虑是否为拼装。</p>
+        <p>这条顺序的依据是：碟面编号最难伪造，贴纸次之，条形码再次之。按难度从高到低核对，能最快定位问题出在哪一环。</p>
+      </div>
+    </section>
+
+    <!-- 06 体验指南 -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <h2>观看与核对路径</h2>
+        <span class="sub">4 步</span>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>先定时段，再定条目</h3>
+          <p>2020—2022 年专属期适合按流水号顺序看，编号即顺序，跳看会错过批次内的风格变化。2023 年后共演单元增多，先看分卷关系再决定看 A 还是 B，两卷结尾不同，顺序反了会重复看同一段设定。</p>
+        </div>
+        <div class="step">
+          <h3>用片长筛掉版本混淆</h3>
+          <p>同一编号出现两个片长记录时，先查是否为分卷、合集重制或不同地区发行。单条作品片长差超过 5 分钟，通常不是记录误差，而是版本不同。合集与原版的差值多在 40 秒上下，属包装压缩，不必当作内容缺失。</p>
+        </div>
+        <div class="step">
+          <h3>比较同类条目看三点</h3>
+          <p>同一阶段的条目比较，看片长、共演人数、是否附赠写真册或花絮。2024 年批次附赠物减少，片长集中在 109 至 113 分钟，差异主要在取景比例而非时长。拿 2021 年的 126 分钟去比 2024 年的 113 分钟，比的其实是发行策略变化。</p>
+        </div>
+        <div class="step">
+          <h3>投入时间前先核版本</h3>
+          <p>决定看某个编号前，先确认手上是原版还是合集重制。合集重制版片头片尾被压缩，若在意完整厂标与字幕节奏，优先找原版。若只想看正片内容，合集的双碟装更省事，还能顺带看 18 分钟幕后花絮。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <span class="sub">6 问</span>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>LA-2022-017 到底算 2022 年还是 2023 年的作品？</summary>
+          <div class="faq-body">
+            <p>包装印刷日期是 2022 年 11 月，碟面编号含 2022 字样，首次上架是 2023 年 1 月 6 日。厂商官网目录归 2022 年，经销商年度清单归 2023 年，两边都没发更正。按印刷年份和编号年份算 2022 年更合理，按上架年份算 2023 年也说得通。</p>
+          </div>
+        </details>
+        <details>
+          <summary>分卷编号 A 和 B 需要两部都看吗？</summary>
+          <div class="faq-body">
+            <p>A 卷 96 分钟，B 卷 104 分钟，多出的 8 分钟是独立收尾场景，A 卷没有对应内容。只看 A 卷会缺结尾，只看 B 卷不影响理解主体。两卷共享场景设定但叙事线独立，不存在必须按顺序看的问题。</p>
+          </div>
+        </details>
+        <details>
+          <summary>合集套装里的正片比原版短 40 秒，是删内容了吗？</summary>
+          <div class="faq-body">
+            <p>不是场景删减。片头厂标压缩约 8 秒，去掉两处黑场过渡约 20 秒，片尾字幕滚动加快约 12 秒，三项相加接近 40 秒。正片场景本身完整，缺的是包装层面的过渡段落。</p>
+          </div>
+        </details>
+        <details>
+          <summary>碟面编号和包装编号不一样，怎么判断是不是原装？</summary>
+          <div class="faq-body">
+            <p>先看碟面编号与包装编号是否一致，再看塑封贴纸编号尾数与碟面编号尾数是否对应。2021 年第 12 条起，条形码末三位也与编号尾数对应。三道都对上基本可排除错配，对不上先查是否为不同批次印刷。</p>
+          </div>
+        </details>
+        <details>
+          <summary>2021 年第 7 条的片长为什么有两个记录？</summary>
+          <div class="faq-body">
+            <p>两个数据库分别记录 98 分钟和 112 分钟，差 14 分钟。这条编号本身没有跳号，流水线连续。分歧出在记录层面，可能是一方把花絮计入正片、另一方没有。核对实物碟面印刷的时长标注最可靠。</p>
+          </div>
+        </details>
+        <details>
+          <summary>2023 年流水号中间跳号，是漏了一条吗？</summary>
+          <div class="faq-body">
+            <p>011 之后直接到 013，013 在包装上标注为「特别篇」，未进入常规流水线。跳号位置有独立命名的条目，且该条目出现在厂商年度清单里，属计划内跳号，不是漏收。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 08 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head">
+        <h2>观众评论</h2>
+        <span class="sub">16 条</span>
+      </div>
+      <div class="comment-grid">
+        <div class="comment"><div class="comment-head"><b>胶片仓管</b><time datetime="2026-11-08">11-08</time></div><p>LA-2024-021 标完结篇，但发行方一句话没多说，先观望。</p><span class="ref">LA-2024-021</span></div>
+        <div class="comment"><div class="comment-head"><b>南门口老周</b><time datetime="2026-11-07">11-07</time></div><p>011A 和 011B 我按乙库分开收的，实物就是两张碟，合并成一条反而别扭。</p><span class="ref">LA-2023-011A/B</span></div>
+        <div class="comment"><div class="comment-head"><b>午夜场第七排</b><time datetime="2026-11-07">11-07</time></div><p>BO-03 那个花絮实测 18 分 12 秒，包装写 18 分钟，差 12 秒也值得记一笔？值得，说明标注是取整的。</p><span class="ref">LA-BOX-03</span></div>
+        <div class="comment"><div class="comment-head"><b>阿茶不加冰</b><time datetime="2026-11-06">11-06</time></div><p>2021 年第 12 条 126 分钟确实长，但后半段节奏拖，长不等于好。</p><span class="ref">LA-2021-012</span></div>
+        <div class="comment"><div class="comment-head"><b>版本控老K</b><time datetime="2026-11-06">11-06</time></div><p>字体换版这个事我拍了对比图，2024 年第 17 条起的新字体笔画更细，旧批次粗。</p><span class="ref">LA-2024-017</span></div>
+        <div class="comment"><div class="comment-head"><b>半截票根</b><time datetime="2026-11-05">11-05</time></div><p>017 那年年份归属吵了快两年，印刷日期摆在那，非要按上架算我也没话说。</p><span class="ref">LA-2022-017</span></div>
+        <div class="comment"><div class="comment-head"><b>纸袋收藏者</b><time datetime="2026-11-04">11-04</time></div><p>写真册 12 页还是 16 页，看你怎么数封面。我拆过，内页确实 12。</p><span class="ref">LA-2021-004</span></div>
+        <div class="comment"><div class="comment-head"><b>晚班地铁</b><time datetime="2026-11-04">11-04</time></div><p>户外取景过半那条我看过，光线不错，就是风噪明显，录音一般。</p><span class="ref">LA-2024-017</span></div>
+        <div class="comment"><div class="comment-head"><b>编号猎人</b><time datetime="2026-11-03">11-03</time></div><p>贴纸尾数对应碟面尾数这招好用，二手市场捡漏靠它躲过两次拼装。</p><span class="ref">LA-2022-009</span></div>
+        <div class="comment"><div class="comment-head"><b>小满不忙</b><time datetime="2026-11-02">11-02</time></div><p>共演单元分卷，我更喜欢 B 卷，收尾那段完整，A 卷结束得太突然。</p><span class="ref">LA-2023-011B</span></div>
+        <div class="comment"><div class="comment-head"><b>旧书摊主</b><time datetime="2026-11-01">11-01</time></div><p>这条跟番号没关系，我就想问有没有人整理过同期其他厂商的编号规则，做对照用。</p></div>
+        <div class="comment"><div class="comment-head"><b>灰盒子</b><time datetime="2026-10-31">10-31</time></div><p>98 分钟和 112 分钟差 14 分钟，我信碟面标注，数据库录入错太多。</p><span class="ref">LA-2021-007</span></div>
+        <div class="comment"><div class="comment-head"><b>三号线常客</b><time datetime="2026-10-30">10-30</time></div><p>特别篇 013 不进流水线这个处理挺聪明，不然流水号永远对不齐。</p><span class="ref">LA-2023-013</span></div>
+        <div class="comment"><div class="comment-head"><b>冰镇酸梅汤</b><time datetime="2026-10-28">10-28</time></div><p>合集重制版片头压缩我能接受，字幕滚太快有点晕。</p><span class="ref">LA-BOX-03</span></div>
+        <div class="comment"><div class="comment-head"><b>凌晨四点</b><time datetime="2026-10-25">10-25</time></div><p>2024 年批次附赠物少了，片长也短了，发行策略明显在变，不好说好坏。</p></div>
+        <div class="comment"><div class="comment-head"><b>老式放映机</b><time datetime="2026-10-22">10-22</time></div><p>条形码末三位对应规则延续到 2022 年就断了？我手上 2023 年的碟对不上。</p><span class="ref">LA-2023-011A</span></div>
+      </div>
+    </section>
+
+    <!-- 09 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <h2>相关资讯</h2>
+        <span class="sub">6 条</span>
+      </div>
+      <div class="news-grid">
+        <article class="news-item">
+          <time datetime="2026-11-08">2026-11-08</time>
+          <h3>LA-2024-021 补录完成，发行方标注「完结篇」</h3>
+          <p>发行方在预告页用红字标注「完结篇」，但截至 11 月 8 日未发布停更公告，2025 年批次是否存在仍未确认。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-11-06">2026-11-06</time>
+          <h3>两家数据库就 LA-2023-011 分卷收录方式维持分歧</h3>
+          <p>甲库与乙库继续分列 A、B 卷，条目总数比丙库多 1 条。三方均未回应是否会统一收录标准。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-11-04">2026-11-04</time>
+          <h3>LA-2022-017 年份归属争议进入第二年</h3>
+          <p>厂商官网目录仍归 2022 年，经销商 2023 年度清单未作修订。包装印刷日期 2022 年 11 月是关键核对项。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-11-02">2026-11-02</time>
+          <h3>LA-BOX-03 幕后花絮实测 18 分 12 秒</h3>
+          <p>与包装标注的 18 分钟差 12 秒，实测者称差异来自片尾字幕未计入。合集重制正片单部约短 40 秒。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-10-29">2026-10-29</time>
+          <h3>2024 年批次碟面编号字体换版</h3>
+          <p>自第 17 条起启用细笔画新字体，旧批次粗体仍在二手市场流通。换版未发布官方说明，靠实物比对确认。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-10-24">2026-10-24</time>
+          <h3>2021 年第 12 条条形码对应规则被复核</h3>
+          <p>末三位与编号尾数对应的规则自该条起启用，持续至 2022 年。2023 年批次是否延续，目前有两份互相矛盾的实物记录。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="reco">
+      <div class="section-head">
+        <h2>相关推荐</h2>
+        <span class="sub">按核对目的索引</span>
+      </div>
+      <div class="reco-wrap">
+        <a class="reco-tag" href="/#featured">LA-2021-004<em>写真册</em></a>
+        <a class="reco-tag" href="/#featured">LA-2022-017<em>年份争议</em></a>
+        <a class="reco-tag" href="/#featured">LA-2023-011A/B<em>分卷</em></a>
+        <a class="reco-tag" href="/#featured">LA-BOX-03<em>合集重制</em></a>
+        <a class="reco-tag" href="/#deepdive">条形码尾数对应规则<em>核对</em></a>
+        <a class="reco-tag" href="/#deepdive">流水号跳号判断<em>规则</em></a>
+        <a class="reco-tag" href="/#guide">碟面与贴纸核对顺序<em>方法</em></a>
+        <a class="reco-tag" href="/#timeline">2020—2026 发行节点<em>时间线</em></a>
+      </div>
+    </section>
+
+    <!-- 11 发行时间线 -->
+    <section class="section" id="timeline">
+      <div class="section-head">
+        <h2>发行时间线</h2>
+        <span class="sub">2020—2026 关键节点</span>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <time datetime="2020-05-14">2020-05-14</time>
+          <h3>专属期编号体系启用</h3>
+          <p>LA 前缀加年份加三位流水号首次使用，首批条目进入常规发行节奏。</p>
+        </div>
+        <div class="tl-item">
+          <time datetime="2021-06-22">2021-06-22</time>
+          <h3>第 12 条起启用条形码对应规则</h3>
+          <p>碟面右下角条形码末三位与编号尾数对应，成为后续批次核对的固定依据。</p>
+        </div>
+        <div class="tl-item">
+          <time datetime="2022-11-18">2022-11-18</time>
+          <h3>LA-2022-017 印刷完成</h3>
+          <p>包装印刷日期落在此日，次年 1 月 6 日首次上架，年份归属分歧由此产生。</p>
+        </div>
+        <div class="tl-item">
+          <time datetime="2023-04-09">2023-04-09</time>
+          <h3>共演单元分卷开始</h3>
+          <p>011A 与 011B 同单元双卷发行，A 卷 96 分钟，B 卷 104 分钟。</p>
+        </div>
+        <div class="tl-item">
+          <time datetime="2023-09-27">2023-09-27</time>
+          <h3>特别篇 013 跳过流水线</h3>
+          <p>011 之后直接到 013，013 标注特别篇，未进入常规编号序列。</p>
+        </div>
+        <div class="tl-item">
+          <time datetime="2024-07-15">2024-07-15</time>
+          <h3>第 17 条起编号字体换版</h3>
+          <p>细笔画新字体启用，旧粗体批次仍在流通，实物比对可区分。</p>
+        </div>
+        <div class="tl-item">
+          <time datetime="2024-10-30">2024-10-30</time>
+          <h3>合集套装 BOX 标识启用</h3>
+          <p>LA-BOX-03 把 2021 年三部单体压成双碟，附 18 分钟幕后花絮。</p>
+        </div>
+        <div class="tl-item">
+          <time datetime="2026-11-08">2026-11-08</time>
+          <h3>第 21 条补录，标注「完结篇」</h3>
+          <p>片长 113 分钟，发行方未同步说明 2025 年批次是否继续。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 投稿互动 -->
+    <section class="section" id="submit">
+      <div class="submit-panel">
+        <div>
+          <h2>补充你手上的番号记录</h2>
+          <p>手上有碟面编号与目录不一致的情况，或实测片长与包装标注有出入，可提交编号与实测数据。核对后并入对应条目，注明补充来源与日期。</p>
+          <form class="submit-fields" id="submitForm" novalidate>
+            <input type="text" id="submitCode" placeholder="番号，如 LA-2022-017" aria-label="番号">
+            <select id="submitType" aria-label="补充类型">
+              <option value="时长">片长实测</option>
+              <option value="碟面">碟面编号</option>
+              <option value="版本">版本差异</option>
+              <option value="其他">其他</option>
+            </select>
+            <button class="btn btn-primary" type="submit">提交</button>
+          </form>
+          <p class="submit-note" id="submitNote" role="status" aria-live="polite">提交后显示核对提示，不保存任何输入内容。</p>
+        </div>
+        <div class="submit-stat">
+          <div><b>86</b><small>已收录番号</small></div>
+          <div><b>23</b><small>读者补充记录</small></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="aside-col">
+    <div class="aside-card">
+      <h2>番号热度榜</h2>
+      <ol class="rank-list">
+        <li><div><a href="/#featured">LA-BOX-03</a><small>双碟合集 · 评分 8.6</small></div></li>
+        <li><div><a href="/#featured">LA-2021-012</a><small>片长 126 分钟 · 评分 8.5</small></div></li>
+        <li><div><a href="/#featured">LA-2021-004</a><small>写真册 12 页 · 评分 8.4</small></div></li>
+        <li><div><a href="/#featured">LA-2024-017</a><small>户外 53% · 评分 8.3</small></div></li>
+        <li><div><a href="/#featured">LA-2022-009</a><small>原封参照 · 评分 8.2</small></div></li>
+        <li><div><a href="/#featured">LA-2022-017</a><small>年份争议 · 评分 8.1</small></div></li>
+      </ol>
+    </div>
+    <div class="aside-card">
+      <h2>最近补录</h2>
+      <ul class="update-list">
+        <li><a href="/#updates">LA-2024-021</a><time datetime="2026-11-08">11-08</time></li>
+        <li><a href="/#updates">LA-2024-020</a><time datetime="2026-11-07">11-07</time></li>
+        <li><a href="/#updates">LA-2023-011A/B</a><time datetime="2026-11-06">11-06</time></li>
+        <li><a href="/#updates">LA-BOX-03</a><time datetime="2026-11-05">11-05</time></li>
+        <li><a href="/#updates">LA-2022-017</a><time datetime="2026-11-04">11-04</time></li>
+        <li><a href="/#updates">LA-2021-004</a><time datetime="2026-11-02">11-02</time></li>
+      </ul>
+    </div>
+    <div class="aside-card">
+      <h2>核对要点</h2>
+      <ul class="update-list">
+        <li><span>碟面编号与包装一致</span><time>第 1 道</time></li>
+        <li><span>贴纸尾数对应碟面</span><time>第 2 道</time></li>
+        <li><span>条形码末三位对应</span><time>第 3 道</time></li>
+        <li><span>片长差 &gt; 5 分钟查版本</span><time>判断</time></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#f2b544"/>
+          <path d="M14 44V20h7l11 15 11-15h7v24h-7V31L32 45 21 31v13z" fill="#1d2b4c"/>
+        </svg>
+        <b>lena anderson 作品番号</b>
+      </div>
+      <p class="footer-desc">覆盖 2020 年 5 月至 2026 年 11 月的 86 条编号记录，含厂商专属期、单体出演、共演分卷与合集套装四类条目。补录节奏为每周一次，版本差异与实测数据随读者补充滚动更新，最近一次核对为 11 月 8 日。</p>
+    </div>
+    <div class="footer-col">
+      <h3>目录</h3>
+      <ul>
+        <li><a href="/#featured">精选番号</a></li>
+        <li><a href="/#updates">番号动态</a></li>
+        <li><a href="/#categories">分类入口</a></li>
+        <li><a href="/#timeline">发行时间线</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>解析</h3>
+      <ul>
+        <li><a href="/#deepdive">编号规则</a></li>
+        <li><a href="/#guide">核对路径</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#reco">相关推荐</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>互动</h3>
+      <ul>
+        <li><a href="/#comments">观众评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#submit">投稿补充</a></li>
+        <li><a href="/#overview">领域概览</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>条目信息为示例整理，碟面与版本信息以实物为准。</span>
+    <span>内容核对日期：2026-11-08</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var burger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobileNav');
+  var overlay = document.getElementById('overlay');
+  function closeMenu(){
+    mobileNav.classList.remove('open');
+    overlay.classList.remove('show');
+    burger.setAttribute('aria-expanded','false');
+  }
+  function openMenu(){
+    mobileNav.classList.add('open');
+    overlay.classList.add('show');
+    burger.setAttribute('aria-expanded','true');
+  }
+  burger.addEventListener('click', function(){
+    if(mobileNav.classList.contains('open')){ closeMenu(); } else { openMenu(); }
+  });
+  overlay.addEventListener('click', closeMenu);
+  mobileNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      closeMenu();
+      var res = document.getElementById('searchResult');
+      if(res) res.classList.remove('show');
+    }
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    toTop.classList.toggle('show', window.scrollY > window.innerHeight * 0.8);
+    highlightChannel();
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 频道高亮 */
+  var channelLinks = Array.prototype.slice.call(document.querySelectorAll('#channelList a'));
+  var sections = channelLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+  function highlightChannel(){
+    var pos = window.scrollY + 160;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos) current = sec.id;
+    });
+    channelLinks.forEach(function(a){
+      var id = a.getAttribute('href').split('#')[1];
+      a.classList.toggle('active', id === current);
+    });
+  }
+  highlightChannel();
+
+  /* 精选筛选 */
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('#featuredGrid .card');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function(c){
+        c.style.display = (f === 'all' || c.getAttribute('data-type') === f) ? '' : 'none';
+      });
+    });
+  });
+
+  /* 本地搜索 */
+  var searchInput = document.getElementById('siteSearch');
+  var searchResult = document.getElementById('searchResult');
+  var index = [];
+  document.querySelectorAll('.card-body').forEach(function(el){
+    var card = el.closest('.card');
+    var h3 = el.querySelector('h3');
+    var p = el.querySelector('p');
+    if(h3){
+      index.push({
+        title: h3.textContent.trim(),
+        desc: p ? p.textContent.trim() : '',
+        id: card && card.closest('section') ? card.closest('section').id : 'featured'
+      });
+    }
+  });
+  document.querySelectorAll('.row-item').forEach(function(el){
+    var h3 = el.querySelector('h3');
+    var p = el.querySelector('p');
+    if(h3){
+      index.push({
+        title: (el.querySelector('.code') ? el.querySelector('.code').textContent.trim() + ' ' : '') + h3.textContent.trim(),
+        desc: p ? p.textContent.trim() : '',
+        id: 'updates'
+      });
+    }
+  });
+  document.querySelectorAll('.news-item').forEach(function(el){
+    var h3 = el.querySelector('h3');
+    if(h3){
+      index.push({title: h3.textContent.trim(), desc:'相关资讯', id:'news'});
+    }
+  });
+
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  searchInput.addEventListener('input', function(){
+    var q = searchInput.value.trim().toLowerCase();
+    if(!q){
+      searchResult.classList.remove('show');
+      searchResult.innerHTML = '';
+      return;
+    }
+    var hits = index.filter(function(item){
+      return item.title.toLowerCase().indexOf(q) > -1 || item.desc.toLowerCase().indexOf(q) > -1;
+    }).slice(0, 6);
+    if(hits.length === 0){
+      searchResult.innerHTML = '<div class="no-hit">没有匹配「' + escapeHtml(searchInput.value.trim()) + '」的番号或条目</div>';
+    } else {
+      searchResult.innerHTML = hits.map(function(item){
+        return '<div><a href="/#' + item.id + '"><b>' + escapeHtml(item.title) + '</b></a><br><span style="color:#828b99;font-size:12px">' + escapeHtml(item.desc.slice(0, 42)) + '</span></div>';
+      }).join('<hr style="border:0;border-top:1px solid #e2e0d8;margin:8px 0">');
+    }
+    searchResult.classList.add('show');
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-box')) searchResult.classList.remove('show');
+  });
+
+  /* 投稿表单 */
+  var submitForm = document.getElementById('submitForm');
+  var submitNote = document.getElementById('submitNote');
+  submitForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var code = document.getElementById('submitCode').value.trim();
+    var type = document.getElementById('submitType').value;
+    if(!code){
+      submitNote.textContent = '请先填写番号，例如 LA-2022-017。';
+      return;
+    }
+    submitNote.textContent = '已收到「' + code + '」的' + type + '补充，核对后并入对应条目并注明来源日期。';
+    submitForm.reset();
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "lena anderson 作品番号",
+  "description": "按发行年份、厂商前缀与单体出演三条线索整理的番号目录，包含碟面核对、版本差异与编号规则解析。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "LA-2022-017 到底算 2022 年还是 2023 年的作品？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "包装印刷日期是 2022 年 11 月，碟面编号含 2022 字样，首次上架是 2023 年 1 月 6 日。厂商官网目录归 2022 年，经销商年度清单归 2023 年，两边都没发更正。按印刷年份和编号年份算 2022 年更合理，按上架年份算 2023 年也说得通。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "分卷编号 A 和 B 需要两部都看吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 卷 96 分钟，B 卷 104 分钟，多出的 8 分钟是独立收尾场景，A 卷没有对应内容。只看 A 卷会缺结尾，只看 B 卷不影响理解主体。两卷共享场景设定但叙事线独立，不存在必须按顺序看的问题。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "合集套装里的正片比原版短 40 秒，是删内容了吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不是场景删减。片头厂标压缩约 8 秒，去掉两处黑场过渡约 20 秒，片尾字幕滚动加快约 12 秒，三项相加接近 40 秒。正片场景本身完整，缺的是包装层面的过渡段落。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "碟面编号和包装编号不一样，怎么判断是不是原装？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先看碟面编号与包装编号是否一致，再看塑封贴纸编号尾数与碟面编号尾数是否对应。2021 年第 12 条起，条形码末三位也与编号尾数对应。三道都对上基本可排除错配，对不上先查是否为不同批次印刷。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2021 年第 7 条的片长为什么有两个记录？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "两个数据库分别记录 98 分钟和 112 分钟，差 14 分钟。这条编号本身没有跳号，流水线连续。分歧出在记录层面，可能是一方把花絮计入正片、另一方没有。核对实物碟面印刷的时长标注最可靠。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2023 年流水号中间跳号，是漏了一条吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "011 之后直接到 013，013 在包装上标注为「特别篇」，未进入常规流水线。跳号位置有独立命名的条目，且该条目出现在厂商年度清单里，属计划内跳号，不是漏收。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+              </html>
